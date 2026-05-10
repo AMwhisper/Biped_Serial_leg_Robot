@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"robomasterc_wheelleg\startup_stm32f407xx.o"
+"robomasterc_wheelleg\system_stm32f4xx.o"
+"robomasterc_wheelleg\gpio.o"
+"robomasterc_wheelleg\can.o"
+"robomasterc_wheelleg\stm32f4xx_it.o"
+"robomasterc_wheelleg\main.o"
+"robomasterc_wheelleg\system.o"
+"robomasterc_wheelleg\dbus_receiver.o"
+"robomasterc_wheelleg\wheel_leg_control.o"
+"robomasterc_wheelleg\leg_controller.o"
+"robomasterc_wheelleg\lqr_controller.o"
+"robomasterc_wheelleg\lqr_gains.o"
+"robomasterc_wheelleg\lqr_system.o"
+"robomasterc_wheelleg\flight_controller.o"
+"robomasterc_wheelleg\motion_planner.o"
+"robomasterc_wheelleg\vmc_math.o"
+"robomasterc_wheelleg\can_driver.o"
+"robomasterc_wheelleg\motor_controller.o"
+"robomasterc_wheelleg\uart_interface.o"
+"robomasterc_wheelleg\data_logger.o"
+--library_type=microlib --strict --scatter "RoboMasterC_WheelLeg\RoboMasterC_WheelLeg.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RoboMasterC_WheelLeg\RoboMasterC_WheelLeg.map" -o RoboMasterC_WheelLeg\RoboMasterC_WheelLeg.axf

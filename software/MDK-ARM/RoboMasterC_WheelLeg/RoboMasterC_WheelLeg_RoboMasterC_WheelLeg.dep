@@ -1,0 +1,115 @@
+Dependencies for Project 'RoboMasterC_WheelLeg', Target 'RoboMasterC_WheelLeg': (DO NOT MODIFY !)
+CompilerVersion: 6210000::V6.21::ARMCLANG
+F (..\board\startup_stm32f407xx.c)(0x6A004E50)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/startup_stm32f407xx.o -MD)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+F (..\board\system_stm32f4xx.c)(0x6A004FC4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/system_stm32f4xx.o -MD)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+F (..\board\gpio.c)(0x6A004FBD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/gpio.o -MD)
+I (..\board\stm32f4xx_hal.hg:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+F (..\board\can.c)(0x6A005094)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/can.o -MD)
+I (..\board\stm32f4xx_hal.ha:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.hM\board\gpio.h)(0x00000000)
+I (..\..\config\bringup_config.h)(0x6A006271)
+F (..\board\stm32f4xx_it.c)(0x6A004DB0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/stm32f4xx_it.o -MD)
+I (..\board\can.hf.\board\stm32f4xx_hal.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+F (..\src\main.c)(0x6A00617E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/main.o -MD)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\math.h..\include\system.h)(0x00000000)
+I (..\..\config\bringup_config.hc.\include\can_driver.h)(0x00000000)
+I (..\include\dbus_receiver.hg.\include\motor_controller.h)(0x00000000)
+I (..\include\leg_controller.h..\..\config\motor_config.h)(0x00000000)
+I (..\include\uart_interface.h..\include\wheel_leg_control.h)(0x00000000)
+I (..\board\stm32f4xx_hal.h)(0x6A004FB4)
+F (..\src\system.c)(0x6A004BEA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/system.o -MD)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.hl\include\can_driver.h)(0x00000000)
+I (..\include\dbus_receiver.h\.\include\motor_controller.h)(0x00000000)
+I (..\include\leg_controller.h..\..\config\motor_config.h)(0x00000000)
+I (..\include\uart_interface.h..\include\wheel_leg_control.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
+F (..\src\dbus_receiver.c)(0x6A004BCC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/dbus_receiver.o -MD)
+I (..\include\dbus_receiver.h)(0x6A004BA6)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (..\..\config\hardware_config.h)(0x6A00509A)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\wheel_leg_control.c)(0x6A004BE2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/wheel_leg_control.o -MD)
+I (..\include\wheel_leg_control.h)(0x6A004BD7)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (..\..\config\hardware_config.hl.\include\leg_controller.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (..\include\lqr_controller.hi.\..\config\motor_config.h)(0x00000000)
+I (..\include\motor_controller.h)(0x6A004AEB)
+I (G:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\leg_controller.c)(0x69FF386B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/leg_controller.o -MD)
+I (..\include\leg_controller.h)(0x69FF3848)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (..\..\config\hardware_config.hl.\include\motor_controller.h)(0x00000000)
+I (..\include\vmc_math.h_:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\lqr_controller.c)(0x69FF3889)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_controller.o -MD)
+I (..\include\lqr_controller.h)(0x69FE3E32)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.hA\include\lqr_gains.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x6569B012)
+F (..\src\lqr_gains.c)(0x69FF387F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_gains.o -MD)
+I (..\include\lqr_gains.hq:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x00000000)
+F (..\src\lqr_system.c)(0x69FF388E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_system.o -MD)
+I (..\include\lqr_system.hr.\include\lqr_controller.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (..\include\flight_controller.h)(0x69FE3E32)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\flight_controller.c)(0x69FE3E32)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/flight_controller.o -MD)
+I (..\include\flight_controller.h)(0x69FE3E32)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x6569B012)
+F (..\src\motion_planner.c)(0x69FF391F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/motion_planner.o -MD)
+I (..\include\motion_planner.h)(0x69FE3C1E)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (..\include\leg_controller.hi:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\vmc_math.c)(0x69FF3839)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/vmc_math.o -MD)
+I (G:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x6569B012)
+F (..\src\can_driver.c)(0x6A006229)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/can_driver.o -MD)
+I (..\include\can_driver.hn:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (..\..\config\hardware_config.h)(0x6A00509A)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.hh\board\stm32f4xx_hal.h)(0x00000000)
+I (..\board\can.h)(0x6A004D7B)
+F (..\src\motor_controller.c)(0x6A006223)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/motor_controller.o -MD)
+I (..\include\motor_controller.h)(0x6A004AEB)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h..\include\can_driver.h)(0x00000000)
+I (..\..\config\motor_config.hi:\Keil5\core\ARM\ARMCLANG\include\math.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\uart_interface.c)(0x69FE3C1E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/uart_interface.o -MD)
+I (..\include\uart_interface.h)(0x6A004BFC)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdarg.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+F (..\src\data_logger.c)(0x69FE3C1E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-D__UVISION_VERSION="539" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/data_logger.o -MD)
+I (..\include\data_logger.ha:\Keil5\core\ARM\ARMCLANG\include\stdint.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdbool.h)(0x6569B012)
+I (..\include\motor_controller.hc.\include\leg_controller.h)(0x00000000)
+I (G:\Keil5\core\ARM\ARMCLANG\include\string.h)(0x6569B012)
+I (G:\Keil5\core\ARM\ARMCLANG\include\stdio.h)(0x6569B012)
+F (..\..\config\hardware_config.h)(0x6A00509A)()
+F (..\..\config\motor_config.h)(0x6A0061E7)()
+F (..\..\config\bringup_config.h)(0x6A006271)()

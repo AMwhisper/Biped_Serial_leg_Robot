@@ -1,0 +1,1339 @@
+Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+
+==============================================================================
+
+Section Cross References
+
+    startup_stm32f407xx.o(.ARM.exidx.text.Default_Handler) refers to startup_stm32f407xx.o(.text.Default_Handler) for [Anonymous Symbol]
+    startup_stm32f407xx.o(.text.Reset_Handler) refers to system_stm32f4xx.o(.text.SystemInit) for SystemInit
+    startup_stm32f407xx.o(.text.Reset_Handler) refers to main.o(.text.main) for main
+    startup_stm32f407xx.o(.ARM.exidx.text.Reset_Handler) refers to startup_stm32f407xx.o(.text.Reset_Handler) for [Anonymous Symbol]
+    startup_stm32f407xx.o(RESET) refers to startup_stm32f407xx.o(.text.Reset_Handler) for Reset_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.NMI_Handler) for NMI_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.MemManage_Handler) for MemManage_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.BusFault_Handler) for BusFault_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f407xx.o(RESET) refers to startup_stm32f407xx.o(.text.Default_Handler) for SVC_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_stm32f407xx.o(RESET) refers to main.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32f407xx.o(RESET) refers to stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler) for CAN2_RX0_IRQHandler
+    system_stm32f4xx.o(.text.HAL_Init) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f4xx.o(.ARM.exidx.text.HAL_Init) refers to system_stm32f4xx.o(.text.HAL_Init) for [Anonymous Symbol]
+    system_stm32f4xx.o(.text.SystemInit) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f4xx.o(.ARM.exidx.text.SystemInit) refers to system_stm32f4xx.o(.text.SystemInit) for [Anonymous Symbol]
+    system_stm32f4xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f4xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_stm32f4xx.o(.text.HAL_GetTick) refers to system_stm32f4xx.o(.bss.hal_tick) for hal_tick
+    system_stm32f4xx.o(.ARM.exidx.text.HAL_GetTick) refers to system_stm32f4xx.o(.text.HAL_GetTick) for [Anonymous Symbol]
+    system_stm32f4xx.o(.text.HAL_IncTick) refers to system_stm32f4xx.o(.bss.hal_tick) for hal_tick
+    system_stm32f4xx.o(.ARM.exidx.text.HAL_IncTick) refers to system_stm32f4xx.o(.text.HAL_IncTick) for [Anonymous Symbol]
+    system_stm32f4xx.o(.ARM.exidx.text.NVIC_EnableIRQ) refers to system_stm32f4xx.o(.text.NVIC_EnableIRQ) for [Anonymous Symbol]
+    system_stm32f4xx.o(.ARM.exidx.text.NVIC_DisableIRQ) refers to system_stm32f4xx.o(.text.NVIC_DisableIRQ) for [Anonymous Symbol]
+    system_stm32f4xx.o(.ARM.exidx.text.NVIC_SetPriority) refers to system_stm32f4xx.o(.text.NVIC_SetPriority) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.HAL_GPIO_Init) refers to gpio.o(.text.HAL_GPIO_Init) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.HAL_GPIO_DeInit) refers to gpio.o(.text.HAL_GPIO_DeInit) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.MX_GPIO_Init) refers to gpio.o(.text.MX_GPIO_Init) for [Anonymous Symbol]
+    can.o(.text.MX_CAN2_Init) refers to gpio.o(.text.HAL_GPIO_Init) for HAL_GPIO_Init
+    can.o(.text.MX_CAN2_Init) refers to can.o(.bss.hcan2) for hcan2
+    can.o(.text.MX_CAN2_Init) refers to can.o(.text.HAL_CAN_Init) for HAL_CAN_Init
+    can.o(.text.MX_CAN2_Init) refers to system_stm32f4xx.o(.text.NVIC_SetPriority) for NVIC_SetPriority
+    can.o(.text.MX_CAN2_Init) refers to system_stm32f4xx.o(.text.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    can.o(.ARM.exidx.text.MX_CAN2_Init) refers to can.o(.text.MX_CAN2_Init) for [Anonymous Symbol]
+    can.o(.text.HAL_CAN_Init) refers to gpio.o(.text.HAL_GPIO_Init) for HAL_GPIO_Init
+    can.o(.text.HAL_CAN_Init) refers to system_stm32f4xx.o(.text.NVIC_SetPriority) for NVIC_SetPriority
+    can.o(.text.HAL_CAN_Init) refers to system_stm32f4xx.o(.text.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    can.o(.ARM.exidx.text.HAL_CAN_Init) refers to can.o(.text.HAL_CAN_Init) for [Anonymous Symbol]
+    can.o(.text.HAL_CAN_MspInit) refers to gpio.o(.text.HAL_GPIO_Init) for HAL_GPIO_Init
+    can.o(.text.HAL_CAN_MspInit) refers to system_stm32f4xx.o(.text.NVIC_SetPriority) for NVIC_SetPriority
+    can.o(.text.HAL_CAN_MspInit) refers to system_stm32f4xx.o(.text.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    can.o(.ARM.exidx.text.HAL_CAN_MspInit) refers to can.o(.text.HAL_CAN_MspInit) for [Anonymous Symbol]
+    can.o(.text.HAL_CAN_MspDeInit) refers to gpio.o(.text.HAL_GPIO_DeInit) for HAL_GPIO_DeInit
+    can.o(.text.HAL_CAN_MspDeInit) refers to system_stm32f4xx.o(.text.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    can.o(.ARM.exidx.text.HAL_CAN_MspDeInit) refers to can.o(.text.HAL_CAN_MspDeInit) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_ConfigFilter) refers to can.o(.text.HAL_CAN_ConfigFilter) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_Start) refers to can.o(.text.HAL_CAN_Start) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_Stop) refers to can.o(.text.HAL_CAN_Stop) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_ActivateNotification) refers to can.o(.text.HAL_CAN_ActivateNotification) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_DeactivateNotification) refers to can.o(.text.HAL_CAN_DeactivateNotification) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_AddTxMessage) refers to can.o(.text.HAL_CAN_AddTxMessage) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_GetRxFifoFillLevel) refers to can.o(.text.HAL_CAN_GetRxFifoFillLevel) for [Anonymous Symbol]
+    can.o(.ARM.exidx.text.HAL_CAN_GetRxMessage) refers to can.o(.text.HAL_CAN_GetRxMessage) for [Anonymous Symbol]
+    can.o(.text.HAL_CAN_IRQHandler) refers to can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) for HAL_CAN_RxFifo0MsgPendingCallback
+    can.o(.ARM.exidx.text.HAL_CAN_IRQHandler) refers to can.o(.text.HAL_CAN_IRQHandler) for [Anonymous Symbol]
+    stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler) refers to can.o(.bss.hcan2) for hcan2
+    stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler) refers to can.o(.text.HAL_CAN_IRQHandler) for HAL_CAN_IRQHandler
+    stm32f4xx_it.o(.ARM.exidx.text.CAN2_RX0_IRQHandler) refers to stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler) for [Anonymous Symbol]
+    main.o(.text.main) refers to system_stm32f4xx.o(.text.SystemInit) for SystemInit
+    main.o(.text.main) refers to system.o(.text.system_init) for system_init
+    main.o(.text.main) refers to main.o(.text.HardFault_Handler) for HardFault_Handler
+    main.o(.text.main) refers to main.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    main.o(.text.main) refers to main.o(.data.bringup_motor_test_step.torque) for bringup_motor_test_step.torque
+    main.o(.text.main) refers to motor_controller.o(.text.motor_set_torque) for motor_set_torque
+    main.o(.text.main) refers to system_stm32f4xx.o(.text.HAL_GetTick) for HAL_GetTick
+    main.o(.text.main) refers to dbus_receiver.o(.text.dbus_rx_byte) for dbus_rx_byte
+    main.o(.text.main) refers to uart_interface.o(.text.uart_receive) for uart_receive
+    main.o(.text.main) refers to dbus_receiver.o(.text.dbus_update_timeout) for dbus_update_timeout
+    main.o(.text.main) refers to system.o(.text.system_update) for system_update
+    main.o(.text.main) refers to motor_controller.o(.text.motor_enable) for motor_enable
+    main.o(.text.main) refers to motor_controller.o(.text.motor_get_status) for motor_get_status
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    main.o(.text.HardFault_Handler) refers to system.o(.text.system_emergency_stop) for system_emergency_stop
+    main.o(.ARM.exidx.text.HardFault_Handler) refers to main.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    main.o(.text.SysTick_Handler) refers to system_stm32f4xx.o(.text.HAL_IncTick) for HAL_IncTick
+    main.o(.ARM.exidx.text.SysTick_Handler) refers to main.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.NMI_Handler) refers to main.o(.text.NMI_Handler) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.UsageFault_Handler) refers to main.o(.text.UsageFault_Handler) for [Anonymous Symbol]
+    main.o(.text.BusFault_Handler) refers to system.o(.text.system_emergency_stop) for system_emergency_stop
+    main.o(.ARM.exidx.text.BusFault_Handler) refers to main.o(.text.BusFault_Handler) for [Anonymous Symbol]
+    main.o(.text.MemManage_Handler) refers to system.o(.text.system_emergency_stop) for system_emergency_stop
+    main.o(.ARM.exidx.text.MemManage_Handler) refers to main.o(.text.MemManage_Handler) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.DebugMon_Handler) refers to main.o(.text.DebugMon_Handler) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.PendSV_Handler) refers to main.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    system.o(.text.system_init) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.text.system_init) refers to uart_interface.o(.text.uart_init) for uart_init
+    system.o(.text.system_init) refers to dbus_receiver.o(.text.dbus_init) for dbus_init
+    system.o(.text.system_init) refers to can_driver.o(.text.can_driver_init) for can_driver_init
+    system.o(.text.system_init) refers to motor_controller.o(.text.motor_controller_init) for motor_controller_init
+    system.o(.text.system_init) refers to leg_controller.o(.text.leg_controller_init) for leg_controller_init
+    system.o(.text.system_init) refers to wheel_leg_control.o(.text.wheel_leg_control_init) for wheel_leg_control_init
+    system.o(.ARM.exidx.text.system_init) refers to system.o(.text.system_init) for [Anonymous Symbol]
+    system.o(.text.system_get_state) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.ARM.exidx.text.system_get_state) refers to system.o(.text.system_get_state) for [Anonymous Symbol]
+    system.o(.text.system_set_state) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.ARM.exidx.text.system_set_state) refers to system.o(.text.system_set_state) for [Anonymous Symbol]
+    system.o(.text.system_update) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.text.system_update) refers to motor_controller.o(.text.motor_update) for motor_update
+    system.o(.text.system_update) refers to leg_controller.o(.text.leg_update) for leg_update
+    system.o(.ARM.exidx.text.system_update) refers to system.o(.text.system_update) for [Anonymous Symbol]
+    system.o(.text.system_shutdown) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.text.system_shutdown) refers to motor_controller.o(.text.motor_disable) for motor_disable
+    system.o(.text.system_shutdown) refers to can_driver.o(.text.can_driver_deinit) for can_driver_deinit
+    system.o(.ARM.exidx.text.system_shutdown) refers to system.o(.text.system_shutdown) for [Anonymous Symbol]
+    system.o(.ARM.exidx.text.system_get_uptime) refers to system.o(.text.system_get_uptime) for [Anonymous Symbol]
+    system.o(.text.system_get_error) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.ARM.exidx.text.system_get_error) refers to system.o(.text.system_get_error) for [Anonymous Symbol]
+    system.o(.text.system_emergency_stop) refers to system.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    system.o(.text.system_emergency_stop) refers to motor_controller.o(.text.motor_disable) for motor_disable
+    system.o(.ARM.exidx.text.system_emergency_stop) refers to system.o(.text.system_emergency_stop) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_init) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.ARM.exidx.text.dbus_init) refers to dbus_receiver.o(.text.dbus_init) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_parse_frame) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.text.dbus_parse_frame) refers to system_stm32f4xx.o(.text.HAL_GetTick) for HAL_GetTick
+    dbus_receiver.o(.ARM.exidx.text.dbus_parse_frame) refers to dbus_receiver.o(.text.dbus_parse_frame) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_rx_byte) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.text.dbus_rx_byte) refers to dbus_receiver.o(.text.dbus_parse_frame) for dbus_parse_frame
+    dbus_receiver.o(.ARM.exidx.text.dbus_rx_byte) refers to dbus_receiver.o(.text.dbus_rx_byte) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_update_timeout) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.ARM.exidx.text.dbus_update_timeout) refers to dbus_receiver.o(.text.dbus_update_timeout) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_get_state) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.ARM.exidx.text.dbus_get_state) refers to dbus_receiver.o(.text.dbus_get_state) for [Anonymous Symbol]
+    dbus_receiver.o(.text.dbus_get_motion_cmd) refers to dbus_receiver.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    dbus_receiver.o(.ARM.exidx.text.dbus_get_motion_cmd) refers to dbus_receiver.o(.text.dbus_get_motion_cmd) for [Anonymous Symbol]
+    wheel_leg_control.o(.text.wheel_leg_control_init) refers to wheel_leg_control.o(.bss.lqr) for lqr
+    wheel_leg_control.o(.text.wheel_leg_control_init) refers to lqr_controller.o(.text.lqr_controller_init) for lqr_controller_init
+    wheel_leg_control.o(.text.wheel_leg_control_init) refers to wheel_leg_control.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_init) refers to wheel_leg_control.o(.text.wheel_leg_control_init) for [Anonymous Symbol]
+    wheel_leg_control.o(.text.wheel_leg_control_enable) refers to wheel_leg_control.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    wheel_leg_control.o(.text.wheel_leg_control_enable) refers to motor_controller.o(.text.motor_enable) for motor_enable
+    wheel_leg_control.o(.text.wheel_leg_control_enable) refers to motor_controller.o(.text.motor_disable) for motor_disable
+    wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_enable) refers to wheel_leg_control.o(.text.wheel_leg_control_enable) for [Anonymous Symbol]
+    wheel_leg_control.o(.text.wheel_leg_control_set_command) refers to wheel_leg_control.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    wheel_leg_control.o(.text.wheel_leg_control_set_command) refers to wheel_leg_control.o(.data.command.2) for command.2
+    wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_set_command) refers to wheel_leg_control.o(.text.wheel_leg_control_set_command) for [Anonymous Symbol]
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to wheel_leg_control.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to leg_controller.o(.text.leg_get_state) for leg_get_state
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to wheel_leg_control.o(.bss.lqr) for lqr
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to lqr_controller.o(.text.lqr_controller_set_config) for lqr_controller_set_config
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to lqr_controller.o(.text.lqr_controller_set_state) for lqr_controller_set_state
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to lqr_controller.o(.text.lqr_compute_control) for lqr_compute_control
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to lqr_controller.o(.text.lqr_get_control) for lqr_get_control
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to wheel_leg_control.o(.data.command.2) for command.2
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to leg_controller.o(.text.leg_set_wheel_torque) for leg_set_wheel_torque
+    wheel_leg_control.o(.text.wheel_leg_control_update) refers to leg_controller.o(.text.leg_set_virtual_force) for leg_set_virtual_force
+    wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_update) refers to wheel_leg_control.o(.text.wheel_leg_control_update) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_controller_init) refers to leg_controller.o(.bss.legs) for legs
+    leg_controller.o(.text.leg_controller_init) refers to memseta.o(.text) for __aeabi_memclr4
+    leg_controller.o(.text.leg_controller_init) refers to leg_controller.o(.text.refresh_leg_state) for refresh_leg_state
+    leg_controller.o(.ARM.exidx.text.leg_controller_init) refers to leg_controller.o(.text.leg_controller_init) for [Anonymous Symbol]
+    leg_controller.o(.text.refresh_leg_state) refers to leg_controller.o(.rodata.cst4) for joint_motors
+    leg_controller.o(.text.refresh_leg_state) refers to motor_controller.o(.text.motor_get) for motor_get
+    leg_controller.o(.text.refresh_leg_state) refers to leg_controller.o(.bss.legs) for legs
+    leg_controller.o(.text.refresh_leg_state) refers to leg_controller.o(.rodata.wheel_motors) for wheel_motors
+    leg_controller.o(.text.refresh_leg_state) refers to vmc_math.o(.text.vmc_leg_pos) for vmc_leg_pos
+    leg_controller.o(.text.refresh_leg_state) refers to vmc_math.o(.text.vmc_leg_spd) for vmc_leg_spd
+    leg_controller.o(.ARM.exidx.text.refresh_leg_state) refers to leg_controller.o(.text.refresh_leg_state) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_set_position) refers to acosf.o(i.__hardfp_acosf) for __hardfp_acosf
+    leg_controller.o(.text.leg_set_position) refers to leg_controller.o(.rodata.cst4) for joint_motors
+    leg_controller.o(.text.leg_set_position) refers to motor_controller.o(.text.motor_set_position) for motor_set_position
+    leg_controller.o(.ARM.exidx.text.leg_set_position) refers to leg_controller.o(.text.leg_set_position) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_inverse_kinematics) refers to acosf.o(i.__hardfp_acosf) for __hardfp_acosf
+    leg_controller.o(.ARM.exidx.text.leg_inverse_kinematics) refers to leg_controller.o(.text.leg_inverse_kinematics) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_set_velocity) refers to leg_controller.o(.bss.legs) for legs
+    leg_controller.o(.ARM.exidx.text.leg_set_velocity) refers to leg_controller.o(.text.leg_set_velocity) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_get_state) refers to leg_controller.o(.text.refresh_leg_state) for refresh_leg_state
+    leg_controller.o(.text.leg_get_state) refers to leg_controller.o(.bss.legs) for legs
+    leg_controller.o(.text.leg_get_state) refers to memcpya.o(.text) for __aeabi_memcpy4
+    leg_controller.o(.ARM.exidx.text.leg_get_state) refers to leg_controller.o(.text.leg_get_state) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_set_torques) refers to leg_controller.o(.rodata.cst4) for joint_motors
+    leg_controller.o(.text.leg_set_torques) refers to motor_controller.o(.text.motor_set_torque) for motor_set_torque
+    leg_controller.o(.ARM.exidx.text.leg_set_torques) refers to leg_controller.o(.text.leg_set_torques) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_set_virtual_force) refers to leg_controller.o(.text.refresh_leg_state) for refresh_leg_state
+    leg_controller.o(.text.leg_set_virtual_force) refers to leg_controller.o(.bss.legs) for legs
+    leg_controller.o(.text.leg_set_virtual_force) refers to vmc_math.o(.text.vmc_leg_conv) for vmc_leg_conv
+    leg_controller.o(.text.leg_set_virtual_force) refers to leg_controller.o(.rodata.cst4) for joint_motors
+    leg_controller.o(.text.leg_set_virtual_force) refers to motor_controller.o(.text.motor_set_torque) for motor_set_torque
+    leg_controller.o(.ARM.exidx.text.leg_set_virtual_force) refers to leg_controller.o(.text.leg_set_virtual_force) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_set_wheel_torque) refers to leg_controller.o(.rodata.wheel_motors) for wheel_motors
+    leg_controller.o(.text.leg_set_wheel_torque) refers to motor_controller.o(.text.motor_set_torque) for motor_set_torque
+    leg_controller.o(.ARM.exidx.text.leg_set_wheel_torque) refers to leg_controller.o(.text.leg_set_wheel_torque) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_forward_kinematics) refers to vmc_math.o(.text.vmc_leg_pos) for vmc_leg_pos
+    leg_controller.o(.ARM.exidx.text.leg_forward_kinematics) refers to leg_controller.o(.text.leg_forward_kinematics) for [Anonymous Symbol]
+    leg_controller.o(.text.leg_update) refers to leg_controller.o(.text.refresh_leg_state) for refresh_leg_state
+    leg_controller.o(.ARM.exidx.text.leg_update) refers to leg_controller.o(.text.leg_update) for [Anonymous Symbol]
+    lqr_controller.o(.text.lqr_controller_init) refers to memseta.o(.text) for __aeabi_memclr4
+    lqr_controller.o(.text.lqr_controller_init) refers to lqr_gains.o(.text.lqr_gains_compute) for lqr_gains_compute
+    lqr_controller.o(.ARM.exidx.text.lqr_controller_init) refers to lqr_controller.o(.text.lqr_controller_init) for [Anonymous Symbol]
+    lqr_controller.o(.text.lqr_controller_set_config) refers to lqr_gains.o(.text.lqr_gains_compute) for lqr_gains_compute
+    lqr_controller.o(.ARM.exidx.text.lqr_controller_set_config) refers to lqr_controller.o(.text.lqr_controller_set_config) for [Anonymous Symbol]
+    lqr_controller.o(.ARM.exidx.text.lqr_controller_set_state) refers to lqr_controller.o(.text.lqr_controller_set_state) for [Anonymous Symbol]
+    lqr_controller.o(.text.lqr_calculate_gains) refers to lqr_gains.o(.text.lqr_gains_compute) for lqr_gains_compute
+    lqr_controller.o(.ARM.exidx.text.lqr_calculate_gains) refers to lqr_controller.o(.text.lqr_calculate_gains) for [Anonymous Symbol]
+    lqr_controller.o(.ARM.exidx.text.lqr_compute_control) refers to lqr_controller.o(.text.lqr_compute_control) for [Anonymous Symbol]
+    lqr_controller.o(.ARM.exidx.text.lqr_get_control) refers to lqr_controller.o(.text.lqr_get_control) for [Anonymous Symbol]
+    lqr_controller.o(.ARM.exidx.text.lqr_get_error_norm) refers to lqr_controller.o(.text.lqr_get_error_norm) for [Anonymous Symbol]
+    lqr_controller.o(.ARM.exidx.text.lqr_controller_reset) refers to lqr_controller.o(.text.lqr_controller_reset) for [Anonymous Symbol]
+    lqr_gains.o(.ARM.exidx.text.lqr_gains_compute) refers to lqr_gains.o(.text.lqr_gains_compute) for [Anonymous Symbol]
+    lqr_gains.o(.text.lqr_gains_get_coeff) refers to lqr_gains.o(.rodata.K_COEFFS) for K_COEFFS
+    lqr_gains.o(.ARM.exidx.text.lqr_gains_get_coeff) refers to lqr_gains.o(.text.lqr_gains_get_coeff) for [Anonymous Symbol]
+    lqr_system.o(.text.lqr_system_init) refers to memseta.o(.text) for __aeabi_memclr4
+    lqr_system.o(.text.lqr_system_init) refers to lqr_controller.o(.text.lqr_controller_init) for lqr_controller_init
+    lqr_system.o(.text.lqr_system_init) refers to flight_controller.o(.text.flight_controller_init) for flight_controller_init
+    lqr_system.o(.ARM.exidx.text.lqr_system_init) refers to lqr_system.o(.text.lqr_system_init) for [Anonymous Symbol]
+    lqr_system.o(.ARM.exidx.text.lqr_system_set_mode) refers to lqr_system.o(.text.lqr_system_set_mode) for [Anonymous Symbol]
+    lqr_system.o(.text.lqr_system_update) refers to lqr_controller.o(.text.lqr_controller_set_state) for lqr_controller_set_state
+    lqr_system.o(.text.lqr_system_update) refers to lqr_controller.o(.text.lqr_compute_control) for lqr_compute_control
+    lqr_system.o(.ARM.exidx.text.lqr_system_update) refers to lqr_system.o(.text.lqr_system_update) for [Anonymous Symbol]
+    lqr_system.o(.text.lqr_system_get_output) refers to lqr_controller.o(.text.lqr_get_control) for lqr_get_control
+    lqr_system.o(.text.lqr_system_get_output) refers to flight_controller.o(.text.flight_controller_get_torques) for flight_controller_get_torques
+    lqr_system.o(.ARM.exidx.text.lqr_system_get_output) refers to lqr_system.o(.text.lqr_system_get_output) for [Anonymous Symbol]
+    lqr_system.o(.ARM.exidx.text.lqr_system_get_mode) refers to lqr_system.o(.text.lqr_system_get_mode) for [Anonymous Symbol]
+    lqr_system.o(.text.lqr_system_execute_jump) refers to lqr_controller.o(.text.lqr_controller_set_state) for lqr_controller_set_state
+    lqr_system.o(.text.lqr_system_execute_jump) refers to lqr_controller.o(.text.lqr_compute_control) for lqr_compute_control
+    lqr_system.o(.text.lqr_system_execute_jump) refers to flight_controller.o(.text.flight_controller_update) for flight_controller_update
+    lqr_system.o(.ARM.exidx.text.lqr_system_execute_jump) refers to lqr_system.o(.text.lqr_system_execute_jump) for [Anonymous Symbol]
+    lqr_system.o(.text.lqr_system_reset) refers to lqr_controller.o(.text.lqr_controller_reset) for lqr_controller_reset
+    lqr_system.o(.ARM.exidx.text.lqr_system_reset) refers to lqr_system.o(.text.lqr_system_reset) for [Anonymous Symbol]
+    flight_controller.o(.text.flight_controller_init) refers to memseta.o(.text) for __aeabi_memclr4
+    flight_controller.o(.ARM.exidx.text.flight_controller_init) refers to flight_controller.o(.text.flight_controller_init) for [Anonymous Symbol]
+    flight_controller.o(.ARM.exidx.text.flight_controller_update) refers to flight_controller.o(.text.flight_controller_update) for [Anonymous Symbol]
+    flight_controller.o(.ARM.exidx.text.flight_controller_get_torques) refers to flight_controller.o(.text.flight_controller_get_torques) for [Anonymous Symbol]
+    flight_controller.o(.ARM.exidx.text.flight_controller_is_flying) refers to flight_controller.o(.text.flight_controller_is_flying) for [Anonymous Symbol]
+    flight_controller.o(.ARM.exidx.text.flight_controller_set_params) refers to flight_controller.o(.text.flight_controller_set_params) for [Anonymous Symbol]
+    motion_planner.o(.text.motion_planner_init) refers to motion_planner.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    motion_planner.o(.ARM.exidx.text.motion_planner_init) refers to motion_planner.o(.text.motion_planner_init) for [Anonymous Symbol]
+    motion_planner.o(.text.motion_planner_execute) refers to motion_planner.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    motion_planner.o(.ARM.exidx.text.motion_planner_execute) refers to motion_planner.o(.text.motion_planner_execute) for [Anonymous Symbol]
+    motion_planner.o(.text.motion_planner_update) refers to motion_planner.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    motion_planner.o(.text.motion_planner_update) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    motion_planner.o(.text.motion_planner_update) refers to leg_controller.o(.text.leg_set_position) for leg_set_position
+    motion_planner.o(.ARM.exidx.text.motion_planner_update) refers to motion_planner.o(.text.motion_planner_update) for [Anonymous Symbol]
+    motion_planner.o(.text.motion_planner_stop) refers to motion_planner.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    motion_planner.o(.text.motion_planner_stop) refers to leg_controller.o(.text.leg_set_position) for leg_set_position
+    motion_planner.o(.ARM.exidx.text.motion_planner_stop) refers to motion_planner.o(.text.motion_planner_stop) for [Anonymous Symbol]
+    motion_planner.o(.text.motion_planner_get_current_cmd) refers to motion_planner.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    motion_planner.o(.ARM.exidx.text.motion_planner_get_current_cmd) refers to motion_planner.o(.text.motion_planner_get_current_cmd) for [Anonymous Symbol]
+    motion_planner.o(.ARM.exidx.text.motion_planner_set_gait) refers to motion_planner.o(.text.motion_planner_set_gait) for [Anonymous Symbol]
+    vmc_math.o(.text.vmc_leg_pos) refers to cosf.o(i.__hardfp_cosf) for __hardfp_cosf
+    vmc_math.o(.text.vmc_leg_pos) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    vmc_math.o(.text.vmc_leg_pos) refers to atanf.o(i.__hardfp_atanf) for __hardfp_atanf
+    vmc_math.o(.text.vmc_leg_pos) refers to atan2f.o(i.__hardfp_atan2f) for __hardfp_atan2f
+    vmc_math.o(.ARM.exidx.text.vmc_leg_pos) refers to vmc_math.o(.text.vmc_leg_pos) for [Anonymous Symbol]
+    vmc_math.o(.text.vmc_leg_spd) refers to cosf.o(i.__hardfp_cosf) for __hardfp_cosf
+    vmc_math.o(.text.vmc_leg_spd) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    vmc_math.o(.text.vmc_leg_spd) refers to atanf.o(i.__hardfp_atanf) for __hardfp_atanf
+    vmc_math.o(.ARM.exidx.text.vmc_leg_spd) refers to vmc_math.o(.text.vmc_leg_spd) for [Anonymous Symbol]
+    vmc_math.o(.text.vmc_leg_conv) refers to cosf.o(i.__hardfp_cosf) for __hardfp_cosf
+    vmc_math.o(.text.vmc_leg_conv) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    vmc_math.o(.text.vmc_leg_conv) refers to atanf.o(i.__hardfp_atanf) for __hardfp_atanf
+    vmc_math.o(.ARM.exidx.text.vmc_leg_conv) refers to vmc_math.o(.text.vmc_leg_conv) for [Anonymous Symbol]
+    can_driver.o(.text.can_driver_init) refers to can_driver.o(.bss.rx_queue) for rx_queue
+    can_driver.o(.text.can_driver_init) refers to can_driver.o(.bss.tx_queue) for tx_queue
+    can_driver.o(.text.can_driver_init) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.text.can_driver_init) refers to can.o(.text.MX_CAN2_Init) for MX_CAN2_Init
+    can_driver.o(.text.can_driver_init) refers to can.o(.bss.hcan2) for hcan2
+    can_driver.o(.text.can_driver_init) refers to can.o(.text.HAL_CAN_ConfigFilter) for HAL_CAN_ConfigFilter
+    can_driver.o(.text.can_driver_init) refers to can.o(.text.HAL_CAN_Start) for HAL_CAN_Start
+    can_driver.o(.text.can_driver_init) refers to can.o(.text.HAL_CAN_ActivateNotification) for HAL_CAN_ActivateNotification
+    can_driver.o(.ARM.exidx.text.can_driver_init) refers to can_driver.o(.text.can_driver_init) for [Anonymous Symbol]
+    can_driver.o(.text.can_driver_deinit) refers to can.o(.bss.hcan2) for hcan2
+    can_driver.o(.text.can_driver_deinit) refers to can.o(.text.HAL_CAN_DeactivateNotification) for HAL_CAN_DeactivateNotification
+    can_driver.o(.text.can_driver_deinit) refers to can.o(.text.HAL_CAN_Stop) for HAL_CAN_Stop
+    can_driver.o(.text.can_driver_deinit) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.ARM.exidx.text.can_driver_deinit) refers to can_driver.o(.text.can_driver_deinit) for [Anonymous Symbol]
+    can_driver.o(.text.can_send) refers to can.o(.bss.hcan2) for hcan2
+    can_driver.o(.text.can_send) refers to can.o(.text.HAL_CAN_AddTxMessage) for HAL_CAN_AddTxMessage
+    can_driver.o(.text.can_send) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.text.can_send) refers to can_driver.o(.bss.tx_queue) for tx_queue
+    can_driver.o(.ARM.exidx.text.can_send) refers to can_driver.o(.text.can_send) for [Anonymous Symbol]
+    can_driver.o(.text.can_receive) refers to can_driver.o(.bss.rx_queue) for rx_queue
+    can_driver.o(.ARM.exidx.text.can_receive) refers to can_driver.o(.text.can_receive) for [Anonymous Symbol]
+    can_driver.o(.text.can_message_available) refers to can_driver.o(.bss.rx_queue) for rx_queue
+    can_driver.o(.ARM.exidx.text.can_message_available) refers to can_driver.o(.text.can_message_available) for [Anonymous Symbol]
+    can_driver.o(.ARM.exidx.text.can_set_filter) refers to can_driver.o(.text.can_set_filter) for [Anonymous Symbol]
+    can_driver.o(.text.can_get_status) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.ARM.exidx.text.can_get_status) refers to can_driver.o(.text.can_get_status) for [Anonymous Symbol]
+    can_driver.o(.text.can_rx_isr_handler) refers to memseta.o(.text) for __aeabi_memclr
+    can_driver.o(.text.can_rx_isr_handler) refers to memcpya.o(.text) for __aeabi_memcpy
+    can_driver.o(.text.can_rx_isr_handler) refers to can_driver.o(.bss.rx_queue) for rx_queue
+    can_driver.o(.text.can_rx_isr_handler) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.ARM.exidx.text.can_rx_isr_handler) refers to can_driver.o(.text.can_rx_isr_handler) for [Anonymous Symbol]
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can.o(.bss.hcan2) for hcan2
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can.o(.text.HAL_CAN_GetRxFifoFillLevel) for HAL_CAN_GetRxFifoFillLevel
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can_driver.o(.bss.driver_status) for driver_status
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can_driver.o(.bss.rx_queue) for rx_queue
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can.o(.text.HAL_CAN_GetRxMessage) for HAL_CAN_GetRxMessage
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to memseta.o(.text) for __aeabi_memclr
+    can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to memcpya.o(.text) for __aeabi_memcpy4
+    can_driver.o(.ARM.exidx.text.HAL_CAN_RxFifo0MsgPendingCallback) refers to can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_controller_init) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_controller_init) refers to memseta.o(.text) for __aeabi_memclr4
+    motor_controller.o(.text.motor_controller_init) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_controller_init) refers to can_driver.o(.text.can_set_filter) for can_set_filter
+    motor_controller.o(.ARM.exidx.text.motor_controller_init) refers to motor_controller.o(.text.motor_controller_init) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_enable) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_enable) refers to can_driver.o(.text.can_send) for can_send
+    motor_controller.o(.text.motor_enable) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.ARM.exidx.text.motor_enable) refers to motor_controller.o(.text.motor_enable) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_get) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_get) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.ARM.exidx.text.motor_get) refers to motor_controller.o(.text.motor_get) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_disable) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_disable) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_disable) refers to can_driver.o(.text.can_send) for can_send
+    motor_controller.o(.ARM.exidx.text.motor_disable) refers to motor_controller.o(.text.motor_disable) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_set_torque) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_set_torque) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_set_torque) refers to motor_controller.o(.text.send_mit_control) for send_mit_control
+    motor_controller.o(.ARM.exidx.text.motor_set_torque) refers to motor_controller.o(.text.motor_set_torque) for [Anonymous Symbol]
+    motor_controller.o(.text.send_mit_control) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.send_mit_control) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.send_mit_control) refers to can_driver.o(.text.can_send) for can_send
+    motor_controller.o(.ARM.exidx.text.send_mit_control) refers to motor_controller.o(.text.send_mit_control) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_set_speed) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_set_speed) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_set_speed) refers to motor_controller.o(.text.send_mit_control) for send_mit_control
+    motor_controller.o(.ARM.exidx.text.motor_set_speed) refers to motor_controller.o(.text.motor_set_speed) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_set_position) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_set_position) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_set_position) refers to motor_controller.o(.text.send_mit_control) for send_mit_control
+    motor_controller.o(.ARM.exidx.text.motor_set_position) refers to motor_controller.o(.text.motor_set_position) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_get_status) refers to motor_controller.o(.bss.motor_count) for motor_count
+    motor_controller.o(.text.motor_get_status) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.ARM.exidx.text.motor_get_status) refers to motor_controller.o(.text.motor_get_status) for [Anonymous Symbol]
+    motor_controller.o(.text.motor_update) refers to can_driver.o(.text.can_message_available) for can_message_available
+    motor_controller.o(.text.motor_update) refers to motor_controller.o(.bss.motors) for motors
+    motor_controller.o(.text.motor_update) refers to can_driver.o(.text.can_receive) for can_receive
+    motor_controller.o(.ARM.exidx.text.motor_update) refers to motor_controller.o(.text.motor_update) for [Anonymous Symbol]
+    uart_interface.o(.text.uart_init) refers to uart_interface.o(.bss.rx_buffer) for rx_buffer
+    uart_interface.o(.text.uart_init) refers to memseta.o(.text) for __aeabi_memclr4
+    uart_interface.o(.text.uart_init) refers to uart_interface.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    uart_interface.o(.ARM.exidx.text.uart_init) refers to uart_interface.o(.text.uart_init) for [Anonymous Symbol]
+    uart_interface.o(.ARM.exidx.text.uart_send) refers to uart_interface.o(.text.uart_send) for [Anonymous Symbol]
+    uart_interface.o(.text.uart_receive) refers to uart_interface.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    uart_interface.o(.text.uart_receive) refers to uart_interface.o(.bss.rx_buffer) for rx_buffer
+    uart_interface.o(.ARM.exidx.text.uart_receive) refers to uart_interface.o(.text.uart_receive) for [Anonymous Symbol]
+    uart_interface.o(.text.uart_available) refers to uart_interface.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    uart_interface.o(.ARM.exidx.text.uart_available) refers to uart_interface.o(.text.uart_available) for [Anonymous Symbol]
+    uart_interface.o(.text.uart_printf) refers to uart_interface.o(.bss.uart_printf.buffer) for uart_printf.buffer
+    uart_interface.o(.text.uart_printf) refers to printfa.o(i.__0vsnprintf) for vsnprintf
+    uart_interface.o(.ARM.exidx.text.uart_printf) refers to uart_interface.o(.text.uart_printf) for [Anonymous Symbol]
+    uart_interface.o(.ARM.exidx.text.uart_debug_msg) refers to uart_interface.o(.text.uart_debug_msg) for [Anonymous Symbol]
+    uart_interface.o(.text.uart_rx_isr_handler) refers to uart_interface.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    uart_interface.o(.text.uart_rx_isr_handler) refers to uart_interface.o(.bss.rx_buffer) for rx_buffer
+    uart_interface.o(.ARM.exidx.text.uart_rx_isr_handler) refers to uart_interface.o(.text.uart_rx_isr_handler) for [Anonymous Symbol]
+    data_logger.o(.text.data_logger_init) refers to data_logger.o(.bss.log_buffer) for log_buffer
+    data_logger.o(.text.data_logger_init) refers to memseta.o(.text) for __aeabi_memclr4
+    data_logger.o(.text.data_logger_init) refers to data_logger.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    data_logger.o(.ARM.exidx.text.data_logger_init) refers to data_logger.o(.text.data_logger_init) for [Anonymous Symbol]
+    data_logger.o(.text.data_logger_log_state) refers to data_logger.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    data_logger.o(.text.data_logger_log_state) refers to data_logger.o(.bss.log_buffer) for log_buffer
+    data_logger.o(.text.data_logger_log_state) refers to motor_controller.o(.text.motor_get) for motor_get
+    data_logger.o(.text.data_logger_log_state) refers to leg_controller.o(.text.leg_get_state) for leg_get_state
+    data_logger.o(.ARM.exidx.text.data_logger_log_state) refers to data_logger.o(.text.data_logger_log_state) for [Anonymous Symbol]
+    data_logger.o(.text.data_logger_get_count) refers to data_logger.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    data_logger.o(.ARM.exidx.text.data_logger_get_count) refers to data_logger.o(.text.data_logger_get_count) for [Anonymous Symbol]
+    data_logger.o(.text.data_logger_get_entry) refers to data_logger.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    data_logger.o(.text.data_logger_get_entry) refers to data_logger.o(.bss.log_buffer) for log_buffer
+    data_logger.o(.text.data_logger_get_entry) refers to memcpya.o(.text) for __aeabi_memcpy4
+    data_logger.o(.ARM.exidx.text.data_logger_get_entry) refers to data_logger.o(.text.data_logger_get_entry) for [Anonymous Symbol]
+    data_logger.o(.text.data_logger_clear) refers to data_logger.o(.bss.log_buffer) for log_buffer
+    data_logger.o(.text.data_logger_clear) refers to memseta.o(.text) for __aeabi_memclr4
+    data_logger.o(.text.data_logger_clear) refers to data_logger.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    data_logger.o(.ARM.exidx.text.data_logger_clear) refers to data_logger.o(.text.data_logger_clear) for [Anonymous Symbol]
+    data_logger.o(.ARM.exidx.text.data_logger_export) refers to data_logger.o(.text.data_logger_export) for [Anonymous Symbol]
+    acosf.o(i.__hardfp_acosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acosf.o(i.__hardfp_acosf) refers to sqrtf.o(i.sqrtf) for sqrtf
+    acosf.o(i.__hardfp_acosf) refers to funder.o(i.__mathlib_flt_infnan) for __mathlib_flt_infnan
+    acosf.o(i.__hardfp_acosf) refers to errno.o(i.__set_errno) for __set_errno
+    acosf.o(i.__hardfp_acosf) refers to funder.o(i.__mathlib_flt_invalid) for __mathlib_flt_invalid
+    acosf.o(i.__softfp_acosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acosf.o(i.__softfp_acosf) refers to acosf.o(i.__hardfp_acosf) for __hardfp_acosf
+    acosf.o(i.acosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    acosf.o(i.acosf) refers to acosf.o(i.__hardfp_acosf) for __hardfp_acosf
+    atan2f.o(i.__hardfp_atan2f) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2f.o(i.__hardfp_atan2f) refers to fpclassifyf.o(i.__ARM_fpclassifyf) for __ARM_fpclassifyf
+    atan2f.o(i.__hardfp_atan2f) refers to funder.o(i.__mathlib_flt_underflow) for __mathlib_flt_underflow
+    atan2f.o(i.__hardfp_atan2f) refers to errno.o(i.__set_errno) for __set_errno
+    atan2f.o(i.__hardfp_atan2f) refers to funder.o(i.__mathlib_flt_infnan2) for __mathlib_flt_infnan2
+    atan2f.o(i.__softfp_atan2f) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2f.o(i.__softfp_atan2f) refers to atan2f.o(i.__hardfp_atan2f) for __hardfp_atan2f
+    atan2f.o(i.atan2f) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2f.o(i.atan2f) refers to atan2f.o(i.__hardfp_atan2f) for __hardfp_atan2f
+    atanf.o(i.__hardfp_atanf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atanf.o(i.__hardfp_atanf) refers to fpclassifyf.o(i.__ARM_fpclassifyf) for __ARM_fpclassifyf
+    atanf.o(i.__hardfp_atanf) refers to funder.o(i.__mathlib_flt_underflow) for __mathlib_flt_underflow
+    atanf.o(i.__hardfp_atanf) refers to funder.o(i.__mathlib_flt_infnan) for __mathlib_flt_infnan
+    atanf.o(i.__softfp_atanf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atanf.o(i.__softfp_atanf) refers to atanf.o(i.__hardfp_atanf) for __hardfp_atanf
+    atanf.o(i.atanf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atanf.o(i.atanf) refers to atanf.o(i.__hardfp_atanf) for __hardfp_atanf
+    cosf.o(i.__hardfp_cosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cosf.o(i.__hardfp_cosf) refers to rredf.o(i.__mathlib_rredf2) for __mathlib_rredf2
+    cosf.o(i.__hardfp_cosf) refers to errno.o(i.__set_errno) for __set_errno
+    cosf.o(i.__hardfp_cosf) refers to funder.o(i.__mathlib_flt_invalid) for __mathlib_flt_invalid
+    cosf.o(i.__hardfp_cosf) refers to funder.o(i.__mathlib_flt_infnan) for __mathlib_flt_infnan
+    cosf.o(i.__softfp_cosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cosf.o(i.__softfp_cosf) refers to cosf.o(i.__hardfp_cosf) for __hardfp_cosf
+    cosf.o(i.cosf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cosf.o(i.cosf) refers to cosf.o(i.__hardfp_cosf) for __hardfp_cosf
+    sinf.o(i.__hardfp_sinf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sinf.o(i.__hardfp_sinf) refers to rredf.o(i.__mathlib_rredf2) for __mathlib_rredf2
+    sinf.o(i.__hardfp_sinf) refers to fpclassifyf.o(i.__ARM_fpclassifyf) for __ARM_fpclassifyf
+    sinf.o(i.__hardfp_sinf) refers to funder.o(i.__mathlib_flt_underflow) for __mathlib_flt_underflow
+    sinf.o(i.__hardfp_sinf) refers to errno.o(i.__set_errno) for __set_errno
+    sinf.o(i.__hardfp_sinf) refers to funder.o(i.__mathlib_flt_invalid) for __mathlib_flt_invalid
+    sinf.o(i.__hardfp_sinf) refers to funder.o(i.__mathlib_flt_infnan) for __mathlib_flt_infnan
+    sinf.o(i.__softfp_sinf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sinf.o(i.__softfp_sinf) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    sinf.o(i.sinf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sinf.o(i.sinf) refers to sinf.o(i.__hardfp_sinf) for __hardfp_sinf
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to fputc.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fpclassifyf.o(i.__ARM_fpclassifyf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rredf.o(i.__mathlib_rredf2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rredf.o(i.__mathlib_rredf2) refers to rredf.o(.constdata) for .constdata
+    rredf.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrtf.o(i.__hardfp_sqrtf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrtf.o(i.__hardfp_sqrtf) refers to errno.o(i.__set_errno) for __set_errno
+    sqrtf.o(i.__softfp_sqrtf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrtf.o(i.__softfp_sqrtf) refers to errno.o(i.__set_errno) for __set_errno
+    sqrtf.o(i.sqrtf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrtf.o(i.sqrtf) refers to errno.o(i.__set_errno) for __set_errno
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text.main) for main
+    fputc.o(i.fputc) refers (Special) to iusesemip.o(.text) for __I$use$semihosting$fputc
+    fputc.o(i.fputc) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fputc_h.o(i._fputc$hlt) refers (Special) to iusesemip.o(.text) for __I$use$semihosting$fputc
+    fputc_h.o(i._fputc$hlt) refers (Special) to semi.o(.text) for __semihosting_library_function
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_stm32f407xx.o(.text), (0 bytes).
+    Removing startup_stm32f407xx.o(.ARM.exidx.text.Default_Handler), (8 bytes).
+    Removing startup_stm32f407xx.o(.ARM.exidx.text.Reset_Handler), (8 bytes).
+    Removing system_stm32f4xx.o(.text), (0 bytes).
+    Removing system_stm32f4xx.o(.text.HAL_Init), (50 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.HAL_Init), (8 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_stm32f4xx.o(.text.SystemCoreClockUpdate), (20 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.HAL_GetTick), (8 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.HAL_IncTick), (8 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.NVIC_EnableIRQ), (8 bytes).
+    Removing system_stm32f4xx.o(.text.NVIC_DisableIRQ), (26 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.NVIC_DisableIRQ), (8 bytes).
+    Removing system_stm32f4xx.o(.ARM.exidx.text.NVIC_SetPriority), (8 bytes).
+    Removing gpio.o(.text), (0 bytes).
+    Removing gpio.o(.ARM.exidx.text.HAL_GPIO_Init), (8 bytes).
+    Removing gpio.o(.text.HAL_GPIO_DeInit), (334 bytes).
+    Removing gpio.o(.ARM.exidx.text.HAL_GPIO_DeInit), (8 bytes).
+    Removing gpio.o(.text.MX_GPIO_Init), (20 bytes).
+    Removing gpio.o(.ARM.exidx.text.MX_GPIO_Init), (8 bytes).
+    Removing can.o(.text), (0 bytes).
+    Removing can.o(.ARM.exidx.text.MX_CAN2_Init), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_Init), (8 bytes).
+    Removing can.o(.text.HAL_CAN_MspInit), (118 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_MspInit), (8 bytes).
+    Removing can.o(.text.HAL_CAN_MspDeInit), (74 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_MspDeInit), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_ConfigFilter), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_Start), (8 bytes).
+    Removing can.o(.text.HAL_CAN_Stop), (24 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_Stop), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_ActivateNotification), (8 bytes).
+    Removing can.o(.text.HAL_CAN_DeactivateNotification), (24 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_DeactivateNotification), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_AddTxMessage), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_GetRxFifoFillLevel), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_GetRxMessage), (8 bytes).
+    Removing can.o(.ARM.exidx.text.HAL_CAN_IRQHandler), (8 bytes).
+    Removing stm32f4xx_it.o(.text), (0 bytes).
+    Removing stm32f4xx_it.o(.ARM.exidx.text.CAN2_RX0_IRQHandler), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
+    Removing main.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing system.o(.text), (0 bytes).
+    Removing system.o(.ARM.exidx.text.system_init), (8 bytes).
+    Removing system.o(.text.system_get_state), (12 bytes).
+    Removing system.o(.ARM.exidx.text.system_get_state), (8 bytes).
+    Removing system.o(.text.system_set_state), (12 bytes).
+    Removing system.o(.ARM.exidx.text.system_set_state), (8 bytes).
+    Removing system.o(.ARM.exidx.text.system_update), (8 bytes).
+    Removing system.o(.text.system_shutdown), (58 bytes).
+    Removing system.o(.ARM.exidx.text.system_shutdown), (8 bytes).
+    Removing system.o(.text.system_get_uptime), (4 bytes).
+    Removing system.o(.ARM.exidx.text.system_get_uptime), (8 bytes).
+    Removing system.o(.text.system_get_error), (12 bytes).
+    Removing system.o(.ARM.exidx.text.system_get_error), (8 bytes).
+    Removing system.o(.ARM.exidx.text.system_emergency_stop), (8 bytes).
+    Removing dbus_receiver.o(.text), (0 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_init), (8 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_parse_frame), (8 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_rx_byte), (8 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_update_timeout), (8 bytes).
+    Removing dbus_receiver.o(.text.dbus_get_state), (12 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_get_state), (8 bytes).
+    Removing dbus_receiver.o(.text.dbus_get_motion_cmd), (380 bytes).
+    Removing dbus_receiver.o(.ARM.exidx.text.dbus_get_motion_cmd), (8 bytes).
+    Removing wheel_leg_control.o(.text), (0 bytes).
+    Removing wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_init), (8 bytes).
+    Removing wheel_leg_control.o(.text.wheel_leg_control_enable), (112 bytes).
+    Removing wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_enable), (8 bytes).
+    Removing wheel_leg_control.o(.text.wheel_leg_control_set_command), (184 bytes).
+    Removing wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_set_command), (8 bytes).
+    Removing wheel_leg_control.o(.text.wheel_leg_control_update), (488 bytes).
+    Removing wheel_leg_control.o(.ARM.exidx.text.wheel_leg_control_update), (8 bytes).
+    Removing wheel_leg_control.o(.data.command.2), (4 bytes).
+    Removing leg_controller.o(.text), (0 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_controller_init), (8 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.refresh_leg_state), (8 bytes).
+    Removing leg_controller.o(.text.leg_set_position), (272 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_set_position), (8 bytes).
+    Removing leg_controller.o(.text.leg_inverse_kinematics), (252 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_inverse_kinematics), (8 bytes).
+    Removing leg_controller.o(.text.leg_set_velocity), (54 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_set_velocity), (8 bytes).
+    Removing leg_controller.o(.text.leg_get_state), (60 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_get_state), (8 bytes).
+    Removing leg_controller.o(.text.leg_set_torques), (56 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_set_torques), (8 bytes).
+    Removing leg_controller.o(.text.leg_set_virtual_force), (122 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_set_virtual_force), (8 bytes).
+    Removing leg_controller.o(.text.leg_set_wheel_torque), (22 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_set_wheel_torque), (8 bytes).
+    Removing leg_controller.o(.text.leg_forward_kinematics), (58 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_forward_kinematics), (8 bytes).
+    Removing leg_controller.o(.ARM.exidx.text.leg_update), (8 bytes).
+    Removing lqr_controller.o(.text), (0 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_controller_init), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_controller_set_config), (88 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_controller_set_config), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_controller_set_state), (32 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_controller_set_state), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_calculate_gains), (22 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_calculate_gains), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_compute_control), (302 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_compute_control), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_get_control), (22 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_get_control), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_get_error_norm), (136 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_get_error_norm), (8 bytes).
+    Removing lqr_controller.o(.text.lqr_controller_reset), (26 bytes).
+    Removing lqr_controller.o(.ARM.exidx.text.lqr_controller_reset), (8 bytes).
+    Removing lqr_gains.o(.text), (0 bytes).
+    Removing lqr_gains.o(.ARM.exidx.text.lqr_gains_compute), (8 bytes).
+    Removing lqr_gains.o(.text.lqr_gains_get_coeff), (56 bytes).
+    Removing lqr_gains.o(.ARM.exidx.text.lqr_gains_get_coeff), (8 bytes).
+    Removing lqr_gains.o(.rodata.K_COEFFS), (192 bytes).
+    Removing lqr_system.o(.text), (0 bytes).
+    Removing lqr_system.o(.text.lqr_system_init), (80 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_init), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_set_mode), (22 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_set_mode), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_update), (52 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_update), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_get_output), (86 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_get_output), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_get_mode), (12 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_get_mode), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_execute_jump), (98 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_execute_jump), (8 bytes).
+    Removing lqr_system.o(.text.lqr_system_reset), (30 bytes).
+    Removing lqr_system.o(.ARM.exidx.text.lqr_system_reset), (8 bytes).
+    Removing flight_controller.o(.text), (0 bytes).
+    Removing flight_controller.o(.text.flight_controller_init), (60 bytes).
+    Removing flight_controller.o(.ARM.exidx.text.flight_controller_init), (8 bytes).
+    Removing flight_controller.o(.text.flight_controller_update), (204 bytes).
+    Removing flight_controller.o(.ARM.exidx.text.flight_controller_update), (8 bytes).
+    Removing flight_controller.o(.text.flight_controller_get_torques), (24 bytes).
+    Removing flight_controller.o(.ARM.exidx.text.flight_controller_get_torques), (8 bytes).
+    Removing flight_controller.o(.text.flight_controller_is_flying), (20 bytes).
+    Removing flight_controller.o(.ARM.exidx.text.flight_controller_is_flying), (8 bytes).
+    Removing flight_controller.o(.text.flight_controller_set_params), (26 bytes).
+    Removing flight_controller.o(.ARM.exidx.text.flight_controller_set_params), (8 bytes).
+    Removing motion_planner.o(.text), (0 bytes).
+    Removing motion_planner.o(.text.motion_planner_init), (30 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_init), (8 bytes).
+    Removing motion_planner.o(.text.motion_planner_execute), (52 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_execute), (8 bytes).
+    Removing motion_planner.o(.text.motion_planner_update), (1144 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_update), (8 bytes).
+    Removing motion_planner.o(.text.motion_planner_stop), (90 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_stop), (8 bytes).
+    Removing motion_planner.o(.text.motion_planner_get_current_cmd), (12 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_get_current_cmd), (8 bytes).
+    Removing motion_planner.o(.text.motion_planner_set_gait), (4 bytes).
+    Removing motion_planner.o(.ARM.exidx.text.motion_planner_set_gait), (8 bytes).
+    Removing motion_planner.o(.rodata..L__const.motion_planner_stop.neutral_pos), (12 bytes).
+    Removing motion_planner.o(.bss..L_MergedGlobals), (32 bytes).
+    Removing vmc_math.o(.text), (0 bytes).
+    Removing vmc_math.o(.ARM.exidx.text.vmc_leg_pos), (8 bytes).
+    Removing vmc_math.o(.ARM.exidx.text.vmc_leg_spd), (8 bytes).
+    Removing vmc_math.o(.text.vmc_leg_conv), (836 bytes).
+    Removing vmc_math.o(.ARM.exidx.text.vmc_leg_conv), (8 bytes).
+    Removing can_driver.o(.text), (0 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_driver_init), (8 bytes).
+    Removing can_driver.o(.text.can_driver_deinit), (38 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_driver_deinit), (8 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_send), (8 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_receive), (8 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_message_available), (8 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_set_filter), (8 bytes).
+    Removing can_driver.o(.text.can_get_status), (12 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_get_status), (8 bytes).
+    Removing can_driver.o(.text.can_rx_isr_handler), (160 bytes).
+    Removing can_driver.o(.ARM.exidx.text.can_rx_isr_handler), (8 bytes).
+    Removing can_driver.o(.ARM.exidx.text.HAL_CAN_RxFifo0MsgPendingCallback), (8 bytes).
+    Removing motor_controller.o(.text), (0 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_controller_init), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_enable), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_get), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_disable), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_set_torque), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.send_mit_control), (8 bytes).
+    Removing motor_controller.o(.text.motor_set_speed), (168 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_set_speed), (8 bytes).
+    Removing motor_controller.o(.text.motor_set_position), (144 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_set_position), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_get_status), (8 bytes).
+    Removing motor_controller.o(.ARM.exidx.text.motor_update), (8 bytes).
+    Removing uart_interface.o(.text), (0 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_init), (8 bytes).
+    Removing uart_interface.o(.text.uart_send), (14 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_send), (8 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_receive), (8 bytes).
+    Removing uart_interface.o(.text.uart_available), (12 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_available), (8 bytes).
+    Removing uart_interface.o(.text.uart_printf), (44 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_printf), (8 bytes).
+    Removing uart_interface.o(.text.uart_debug_msg), (2 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_debug_msg), (8 bytes).
+    Removing uart_interface.o(.text.uart_rx_isr_handler), (44 bytes).
+    Removing uart_interface.o(.ARM.exidx.text.uart_rx_isr_handler), (8 bytes).
+    Removing uart_interface.o(.bss.uart_printf.buffer), (256 bytes).
+    Removing data_logger.o(.text), (0 bytes).
+    Removing data_logger.o(.text.data_logger_init), (40 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_init), (8 bytes).
+    Removing data_logger.o(.text.data_logger_log_state), (398 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_log_state), (8 bytes).
+    Removing data_logger.o(.text.data_logger_get_count), (12 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_get_count), (8 bytes).
+    Removing data_logger.o(.text.data_logger_get_entry), (64 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_get_entry), (8 bytes).
+    Removing data_logger.o(.text.data_logger_clear), (38 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_clear), (8 bytes).
+    Removing data_logger.o(.text.data_logger_export), (4 bytes).
+    Removing data_logger.o(.ARM.exidx.text.data_logger_export), (8 bytes).
+    Removing data_logger.o(.bss.log_buffer), (156000 bytes).
+    Removing data_logger.o(.bss..L_MergedGlobals), (8 bytes).
+    Removing dadd.o(.text), (334 bytes).
+    Removing dmul.o(.text), (228 bytes).
+    Removing ddiv.o(.text), (222 bytes).
+    Removing dfixul.o(.text), (48 bytes).
+    Removing cdrcmple.o(.text), (48 bytes).
+    Removing depilogue.o(.text), (186 bytes).
+
+232 unused section(s) (total 166218 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/../cmprslib/zerorunl.c           0x00000000   Number         0  __dczerorl.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
+    ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc_h.o ABSOLUTE
+    ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../mathlib/acosf.c                       0x00000000   Number         0  acosf.o ABSOLUTE
+    ../mathlib/atan2f.c                      0x00000000   Number         0  atan2f.o ABSOLUTE
+    ../mathlib/atanf.c                       0x00000000   Number         0  atanf.o ABSOLUTE
+    ../mathlib/cosf.c                        0x00000000   Number         0  cosf.o ABSOLUTE
+    ../mathlib/fpclassifyf.c                 0x00000000   Number         0  fpclassifyf.o ABSOLUTE
+    ../mathlib/funder.c                      0x00000000   Number         0  funder.o ABSOLUTE
+    ../mathlib/rredf.c                       0x00000000   Number         0  rredf.o ABSOLUTE
+    ../mathlib/sinf.c                        0x00000000   Number         0  sinf.o ABSOLUTE
+    ../mathlib/sqrtf.c                       0x00000000   Number         0  sqrtf.o ABSOLUTE
+    can.c                                    0x00000000   Number         0  can.o ABSOLUTE
+    can_driver.c                             0x00000000   Number         0  can_driver.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    data_logger.c                            0x00000000   Number         0  data_logger.o ABSOLUTE
+    dbus_receiver.c                          0x00000000   Number         0  dbus_receiver.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    flight_controller.c                      0x00000000   Number         0  flight_controller.o ABSOLUTE
+    gpio.c                                   0x00000000   Number         0  gpio.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    leg_controller.c                         0x00000000   Number         0  leg_controller.o ABSOLUTE
+    lqr_controller.c                         0x00000000   Number         0  lqr_controller.o ABSOLUTE
+    lqr_gains.c                              0x00000000   Number         0  lqr_gains.o ABSOLUTE
+    lqr_system.c                             0x00000000   Number         0  lqr_system.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    motion_planner.c                         0x00000000   Number         0  motion_planner.o ABSOLUTE
+    motor_controller.c                       0x00000000   Number         0  motor_controller.o ABSOLUTE
+    startup_stm32f407xx.c                    0x00000000   Number         0  startup_stm32f407xx.o ABSOLUTE
+    stm32f4xx_it.c                           0x00000000   Number         0  stm32f4xx_it.o ABSOLUTE
+    system.c                                 0x00000000   Number         0  system.o ABSOLUTE
+    system_stm32f4xx.c                       0x00000000   Number         0  system_stm32f4xx.o ABSOLUTE
+    uart_interface.c                         0x00000000   Number         0  uart_interface.o ABSOLUTE
+    vmc_math.c                               0x00000000   Number         0  vmc_math.o ABSOLUTE
+    wheel_leg_control.c                      0x00000000   Number         0  wheel_leg_control.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x08000000   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x08000000   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x08000004   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x08000008   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x08000008   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x08000008   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x08000010   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x08000010   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x08000010   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x08000010   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000014   Section        0  memcpya.o(.text)
+    .text                                    0x08000038   Section        0  memseta.o(.text)
+    .text                                    0x0800005c   Section        0  iusefp.o(.text)
+    .text                                    0x0800005c   Section       48  init.o(.text)
+    .text                                    0x0800008c   Section        0  __dczerorl.o(.text)
+    [Anonymous Symbol]                       0x080000c8   Section        0  main.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x080000d4   Section        0  stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler)
+    [Anonymous Symbol]                       0x080000e0   Section        0  main.o(.text.DebugMon_Handler)
+    [Anonymous Symbol]                       0x080000e4   Section        0  startup_stm32f407xx.o(.text.Default_Handler)
+    [Anonymous Symbol]                       0x080000e8   Section        0  can.o(.text.HAL_CAN_ActivateNotification)
+    [Anonymous Symbol]                       0x080000fc   Section        0  can.o(.text.HAL_CAN_AddTxMessage)
+    [Anonymous Symbol]                       0x08000174   Section        0  can.o(.text.HAL_CAN_ConfigFilter)
+    [Anonymous Symbol]                       0x0800022c   Section        0  can.o(.text.HAL_CAN_GetRxFifoFillLevel)
+    [Anonymous Symbol]                       0x0800024c   Section        0  can.o(.text.HAL_CAN_GetRxMessage)
+    [Anonymous Symbol]                       0x080002ec   Section        0  can.o(.text.HAL_CAN_IRQHandler)
+    [Anonymous Symbol]                       0x08000304   Section        0  can.o(.text.HAL_CAN_Init)
+    [Anonymous Symbol]                       0x080003dc   Section        0  can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback)
+    [Anonymous Symbol]                       0x080004e0   Section        0  can.o(.text.HAL_CAN_Start)
+    [Anonymous Symbol]                       0x080005b8   Section        0  gpio.o(.text.HAL_GPIO_Init)
+    [Anonymous Symbol]                       0x080006f0   Section        0  system_stm32f4xx.o(.text.HAL_GetTick)
+    [Anonymous Symbol]                       0x080006fc   Section        0  system_stm32f4xx.o(.text.HAL_IncTick)
+    [Anonymous Symbol]                       0x0800070c   Section        0  main.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x08000718   Section        0  can.o(.text.MX_CAN2_Init)
+    [Anonymous Symbol]                       0x080007b0   Section        0  main.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x080007bc   Section        0  main.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x080007c0   Section        0  system_stm32f4xx.o(.text.NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x080007dc   Section        0  system_stm32f4xx.o(.text.NVIC_SetPriority)
+    [Anonymous Symbol]                       0x080007ec   Section        0  main.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x080007f0   Section        0  startup_stm32f407xx.o(.text.Reset_Handler)
+    [Anonymous Symbol]                       0x080007fc   Section        0  main.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08000800   Section        0  system_stm32f4xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08000834   Section        0  main.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x08000838   Section        0  can_driver.o(.text.can_driver_init)
+    [Anonymous Symbol]                       0x080008cc   Section        0  can_driver.o(.text.can_message_available)
+    [Anonymous Symbol]                       0x080008e0   Section        0  can_driver.o(.text.can_receive)
+    [Anonymous Symbol]                       0x0800093c   Section        0  can_driver.o(.text.can_send)
+    [Anonymous Symbol]                       0x080009e8   Section        0  can_driver.o(.text.can_set_filter)
+    [Anonymous Symbol]                       0x080009ec   Section        0  dbus_receiver.o(.text.dbus_init)
+    [Anonymous Symbol]                       0x08000a20   Section        0  dbus_receiver.o(.text.dbus_parse_frame)
+    [Anonymous Symbol]                       0x08000b0c   Section        0  dbus_receiver.o(.text.dbus_rx_byte)
+    [Anonymous Symbol]                       0x08000b38   Section        0  dbus_receiver.o(.text.dbus_update_timeout)
+    [Anonymous Symbol]                       0x08000b5c   Section        0  leg_controller.o(.text.leg_controller_init)
+    [Anonymous Symbol]                       0x08000b7c   Section        0  leg_controller.o(.text.leg_update)
+    [Anonymous Symbol]                       0x08000b90   Section        0  lqr_controller.o(.text.lqr_controller_init)
+    [Anonymous Symbol]                       0x08000c04   Section        0  lqr_gains.o(.text.lqr_gains_compute)
+    [Anonymous Symbol]                       0x08000f08   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x08000fe8   Section        0  motor_controller.o(.text.motor_controller_init)
+    [Anonymous Symbol]                       0x08001040   Section        0  motor_controller.o(.text.motor_disable)
+    [Anonymous Symbol]                       0x080010b0   Section        0  motor_controller.o(.text.motor_enable)
+    [Anonymous Symbol]                       0x08001114   Section        0  motor_controller.o(.text.motor_get)
+    [Anonymous Symbol]                       0x08001140   Section        0  motor_controller.o(.text.motor_get_status)
+    [Anonymous Symbol]                       0x0800119c   Section        0  motor_controller.o(.text.motor_set_torque)
+    [Anonymous Symbol]                       0x08001238   Section        0  motor_controller.o(.text.motor_update)
+    refresh_leg_state                        0x0800139d   Thumb Code   214  leg_controller.o(.text.refresh_leg_state)
+    [Anonymous Symbol]                       0x0800139c   Section        0  leg_controller.o(.text.refresh_leg_state)
+    send_mit_control                         0x08001475   Thumb Code   456  motor_controller.o(.text.send_mit_control)
+    [Anonymous Symbol]                       0x08001474   Section        0  motor_controller.o(.text.send_mit_control)
+    [Anonymous Symbol]                       0x0800165c   Section        0  system.o(.text.system_emergency_stop)
+    [Anonymous Symbol]                       0x08001698   Section        0  system.o(.text.system_init)
+    [Anonymous Symbol]                       0x080016f4   Section        0  system.o(.text.system_update)
+    [Anonymous Symbol]                       0x0800172c   Section        0  uart_interface.o(.text.uart_init)
+    [Anonymous Symbol]                       0x08001754   Section        0  uart_interface.o(.text.uart_receive)
+    [Anonymous Symbol]                       0x08001858   Section        0  vmc_math.o(.text.vmc_leg_pos)
+    [Anonymous Symbol]                       0x08001990   Section        0  vmc_math.o(.text.vmc_leg_spd)
+    [Anonymous Symbol]                       0x08001cd8   Section        0  wheel_leg_control.o(.text.wheel_leg_control_init)
+    i.__ARM_fpclassifyf                      0x08001d0c   Section        0  fpclassifyf.o(i.__ARM_fpclassifyf)
+    i.__hardfp_atan2f                        0x08001d34   Section        0  atan2f.o(i.__hardfp_atan2f)
+    i.__hardfp_atanf                         0x08001fe0   Section        0  atanf.o(i.__hardfp_atanf)
+    i.__hardfp_cosf                          0x08002140   Section        0  cosf.o(i.__hardfp_cosf)
+    i.__hardfp_sinf                          0x08002290   Section        0  sinf.o(i.__hardfp_sinf)
+    i.__mathlib_flt_infnan                   0x08002420   Section        0  funder.o(i.__mathlib_flt_infnan)
+    i.__mathlib_flt_infnan2                  0x08002426   Section        0  funder.o(i.__mathlib_flt_infnan2)
+    i.__mathlib_flt_invalid                  0x0800242c   Section        0  funder.o(i.__mathlib_flt_invalid)
+    i.__mathlib_flt_underflow                0x0800243c   Section        0  funder.o(i.__mathlib_flt_underflow)
+    i.__mathlib_rredf2                       0x0800244c   Section        0  rredf.o(i.__mathlib_rredf2)
+    i.__scatterload_copy                     0x080025a0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080025ae   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080025b0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.__set_errno                            0x080025c0   Section        0  errno.o(i.__set_errno)
+    twooverpi                                0x080025cc   Data          32  rredf.o(.constdata)
+    .constdata                               0x080025cc   Section       32  rredf.o(.constdata)
+    joint_motors                             0x080025ec   Data           4  leg_controller.o(.rodata.cst4)
+    [Anonymous Symbol]                       0x080025ec   Section        0  leg_controller.o(.rodata.cst4)
+    wheel_motors                             0x080025f0   Data           2  leg_controller.o(.rodata.wheel_motors)
+    [Anonymous Symbol]                       0x080025f0   Section        0  leg_controller.o(.rodata.wheel_motors)
+    __tagsym$$used.0                         0x08002634   Number         0  startup_stm32f407xx.o(RESET)
+    _errno                                   0x20000000   Data           4  errno.o(.data)
+    .data                                    0x20000000   Section        4  errno.o(.data)
+    bringup_motor_test_step.torque           0x20000008   Data           4  main.o(.data.bringup_motor_test_step.torque)
+    [Anonymous Symbol]                       0x20000008   Section        0  main.o(.data.bringup_motor_test_step.torque)
+    .L_MergedGlobals                         0x2000000c   Data          12  main.o(.bss..L_MergedGlobals)
+    bringup_motor_test_step.motor_started    0x2000000c   Data           1  main.o(.bss..L_MergedGlobals)
+    [Anonymous Symbol]                       0x2000000c   Section        0  main.o(.bss..L_MergedGlobals)
+    loop_counter                             0x20000010   Data           4  main.o(.bss..L_MergedGlobals)
+    bringup_motor_test_step.last_toggle_ms   0x20000014   Data           4  main.o(.bss..L_MergedGlobals)
+    .L_MergedGlobals                         0x20000018   Data           8  system.o(.bss..L_MergedGlobals)
+    system_state                             0x20000018   Data           1  system.o(.bss..L_MergedGlobals)
+    [Anonymous Symbol]                       0x20000018   Section        0  system.o(.bss..L_MergedGlobals)
+    system_error                             0x2000001c   Data           4  system.o(.bss..L_MergedGlobals)
+    .L_MergedGlobals                         0x20000020   Data          48  dbus_receiver.o(.bss..L_MergedGlobals)
+    frame_pos                                0x20000020   Data           1  dbus_receiver.o(.bss..L_MergedGlobals)
+    [Anonymous Symbol]                       0x20000020   Section        0  dbus_receiver.o(.bss..L_MergedGlobals)
+    frame_buf                                0x20000021   Data          18  dbus_receiver.o(.bss..L_MergedGlobals)
+    state                                    0x20000034   Data          28  dbus_receiver.o(.bss..L_MergedGlobals)
+    .L_MergedGlobals                         0x20000050   Data          12  wheel_leg_control.o(.bss..L_MergedGlobals)
+    initialized                              0x20000050   Data           1  wheel_leg_control.o(.bss..L_MergedGlobals)
+    [Anonymous Symbol]                       0x20000050   Section        0  wheel_leg_control.o(.bss..L_MergedGlobals)
+    enabled                                  0x20000051   Data           1  wheel_leg_control.o(.bss..L_MergedGlobals)
+    command.0                                0x20000054   Data           4  wheel_leg_control.o(.bss..L_MergedGlobals)
+    command.1                                0x20000058   Data           4  wheel_leg_control.o(.bss..L_MergedGlobals)
+    .L_MergedGlobals                         0x2000005c   Data          12  uart_interface.o(.bss..L_MergedGlobals)
+    rx_head                                  0x2000005c   Data           4  uart_interface.o(.bss..L_MergedGlobals)
+    [Anonymous Symbol]                       0x2000005c   Section        0  uart_interface.o(.bss..L_MergedGlobals)
+    rx_tail                                  0x20000060   Data           4  uart_interface.o(.bss..L_MergedGlobals)
+    rx_count                                 0x20000064   Data           4  uart_interface.o(.bss..L_MergedGlobals)
+    driver_status                            0x20000068   Data           1  can_driver.o(.bss.driver_status)
+    [Anonymous Symbol]                       0x20000068   Section        0  can_driver.o(.bss.driver_status)
+    hal_tick                                 0x2000006c   Data           4  system_stm32f4xx.o(.bss.hal_tick)
+    [Anonymous Symbol]                       0x2000006c   Section        0  system_stm32f4xx.o(.bss.hal_tick)
+    legs                                     0x200000a0   Data         152  leg_controller.o(.bss.legs)
+    [Anonymous Symbol]                       0x200000a0   Section        0  leg_controller.o(.bss.legs)
+    lqr                                      0x20000138   Data         128  wheel_leg_control.o(.bss.lqr)
+    [Anonymous Symbol]                       0x20000138   Section        0  wheel_leg_control.o(.bss.lqr)
+    motor_count                              0x200001b8   Data           1  motor_controller.o(.bss.motor_count)
+    [Anonymous Symbol]                       0x200001b8   Section        0  motor_controller.o(.bss.motor_count)
+    motors                                   0x200001bc   Data         192  motor_controller.o(.bss.motors)
+    [Anonymous Symbol]                       0x200001bc   Section        0  motor_controller.o(.bss.motors)
+    rx_buffer                                0x2000027c   Data         256  uart_interface.o(.bss.rx_buffer)
+    [Anonymous Symbol]                       0x2000027c   Section        0  uart_interface.o(.bss.rx_buffer)
+    rx_queue                                 0x2000037c   Data         648  can_driver.o(.bss.rx_queue)
+    [Anonymous Symbol]                       0x2000037c   Section        0  can_driver.o(.bss.rx_queue)
+    tx_queue                                 0x20000604   Data         648  can_driver.o(.bss.tx_queue)
+    [Anonymous Symbol]                       0x20000604   Section        0  can_driver.o(.bss.tx_queue)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __main                                   0x08000001   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x08000001   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x08000005   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x08000009   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x08000009   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x08000009   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x08000009   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x08000011   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x08000011   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __aeabi_memcpy                           0x08000015   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x08000015   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x08000015   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x08000039   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x08000039   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x08000039   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x08000047   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x08000047   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x08000047   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x0800004b   Thumb Code    18  memseta.o(.text)
+    __I$use$fp                               0x0800005d   Thumb Code     0  iusefp.o(.text)
+    __scatterload                            0x0800005d   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x0800005d   Thumb Code     0  init.o(.text)
+    __decompress                             0x0800008d   Thumb Code     0  __dczerorl.o(.text)
+    __decompress0                            0x0800008d   Thumb Code    58  __dczerorl.o(.text)
+    BusFault_Handler                         0x080000c9   Thumb Code    10  main.o(.text.BusFault_Handler)
+    CAN2_RX0_IRQHandler                      0x080000d5   Thumb Code    12  stm32f4xx_it.o(.text.CAN2_RX0_IRQHandler)
+    DebugMon_Handler                         0x080000e1   Thumb Code     2  main.o(.text.DebugMon_Handler)
+    Default_Handler                          0x080000e5   Thumb Code     2  startup_stm32f407xx.o(.text.Default_Handler)
+    SVC_Handler                              0x080000e5   Thumb Code     2  startup_stm32f407xx.o(.text.Default_Handler)
+    HAL_CAN_ActivateNotification             0x080000e9   Thumb Code    20  can.o(.text.HAL_CAN_ActivateNotification)
+    HAL_CAN_AddTxMessage                     0x080000fd   Thumb Code   120  can.o(.text.HAL_CAN_AddTxMessage)
+    HAL_CAN_ConfigFilter                     0x08000175   Thumb Code   182  can.o(.text.HAL_CAN_ConfigFilter)
+    HAL_CAN_GetRxFifoFillLevel               0x0800022d   Thumb Code    32  can.o(.text.HAL_CAN_GetRxFifoFillLevel)
+    HAL_CAN_GetRxMessage                     0x0800024d   Thumb Code   160  can.o(.text.HAL_CAN_GetRxMessage)
+    HAL_CAN_IRQHandler                       0x080002ed   Thumb Code    24  can.o(.text.HAL_CAN_IRQHandler)
+    HAL_CAN_Init                             0x08000305   Thumb Code   214  can.o(.text.HAL_CAN_Init)
+    HAL_CAN_RxFifo0MsgPendingCallback        0x080003dd   Thumb Code   258  can_driver.o(.text.HAL_CAN_RxFifo0MsgPendingCallback)
+    HAL_CAN_Start                            0x080004e1   Thumb Code   216  can.o(.text.HAL_CAN_Start)
+    HAL_GPIO_Init                            0x080005b9   Thumb Code   310  gpio.o(.text.HAL_GPIO_Init)
+    HAL_GetTick                              0x080006f1   Thumb Code    12  system_stm32f4xx.o(.text.HAL_GetTick)
+    HAL_IncTick                              0x080006fd   Thumb Code    16  system_stm32f4xx.o(.text.HAL_IncTick)
+    HardFault_Handler                        0x0800070d   Thumb Code    10  main.o(.text.HardFault_Handler)
+    MX_CAN2_Init                             0x08000719   Thumb Code   150  can.o(.text.MX_CAN2_Init)
+    MemManage_Handler                        0x080007b1   Thumb Code    10  main.o(.text.MemManage_Handler)
+    NMI_Handler                              0x080007bd   Thumb Code     2  main.o(.text.NMI_Handler)
+    NVIC_EnableIRQ                           0x080007c1   Thumb Code    26  system_stm32f4xx.o(.text.NVIC_EnableIRQ)
+    NVIC_SetPriority                         0x080007dd   Thumb Code    14  system_stm32f4xx.o(.text.NVIC_SetPriority)
+    PendSV_Handler                           0x080007ed   Thumb Code     2  main.o(.text.PendSV_Handler)
+    Reset_Handler                            0x080007f1   Thumb Code    10  startup_stm32f407xx.o(.text.Reset_Handler)
+    SysTick_Handler                          0x080007fd   Thumb Code     4  main.o(.text.SysTick_Handler)
+    SystemInit                               0x08000801   Thumb Code    50  system_stm32f4xx.o(.text.SystemInit)
+    UsageFault_Handler                       0x08000835   Thumb Code     2  main.o(.text.UsageFault_Handler)
+    can_driver_init                          0x08000839   Thumb Code   146  can_driver.o(.text.can_driver_init)
+    can_message_available                    0x080008cd   Thumb Code    20  can_driver.o(.text.can_message_available)
+    can_receive                              0x080008e1   Thumb Code    90  can_driver.o(.text.can_receive)
+    can_send                                 0x0800093d   Thumb Code   170  can_driver.o(.text.can_send)
+    can_set_filter                           0x080009e9   Thumb Code     4  can_driver.o(.text.can_set_filter)
+    dbus_init                                0x080009ed   Thumb Code    50  dbus_receiver.o(.text.dbus_init)
+    dbus_parse_frame                         0x08000a21   Thumb Code   236  dbus_receiver.o(.text.dbus_parse_frame)
+    dbus_rx_byte                             0x08000b0d   Thumb Code    44  dbus_receiver.o(.text.dbus_rx_byte)
+    dbus_update_timeout                      0x08000b39   Thumb Code    34  dbus_receiver.o(.text.dbus_update_timeout)
+    leg_controller_init                      0x08000b5d   Thumb Code    32  leg_controller.o(.text.leg_controller_init)
+    leg_update                               0x08000b7d   Thumb Code    18  leg_controller.o(.text.leg_update)
+    lqr_controller_init                      0x08000b91   Thumb Code   116  lqr_controller.o(.text.lqr_controller_init)
+    lqr_gains_compute                        0x08000c05   Thumb Code   572  lqr_gains.o(.text.lqr_gains_compute)
+    main                                     0x08000f09   Thumb Code   224  main.o(.text.main)
+    motor_controller_init                    0x08000fe9   Thumb Code    86  motor_controller.o(.text.motor_controller_init)
+    motor_disable                            0x08001041   Thumb Code   110  motor_controller.o(.text.motor_disable)
+    motor_enable                             0x080010b1   Thumb Code   100  motor_controller.o(.text.motor_enable)
+    motor_get                                0x08001115   Thumb Code    44  motor_controller.o(.text.motor_get)
+    motor_get_status                         0x08001141   Thumb Code    90  motor_controller.o(.text.motor_get_status)
+    motor_set_torque                         0x0800119d   Thumb Code   152  motor_controller.o(.text.motor_set_torque)
+    motor_update                             0x08001239   Thumb Code   332  motor_controller.o(.text.motor_update)
+    system_emergency_stop                    0x0800165d   Thumb Code    60  system.o(.text.system_emergency_stop)
+    system_init                              0x08001699   Thumb Code    92  system.o(.text.system_init)
+    system_update                            0x080016f5   Thumb Code    56  system.o(.text.system_update)
+    uart_init                                0x0800172d   Thumb Code    38  uart_interface.o(.text.uart_init)
+    uart_receive                             0x08001755   Thumb Code   258  uart_interface.o(.text.uart_receive)
+    vmc_leg_pos                              0x08001859   Thumb Code   296  vmc_math.o(.text.vmc_leg_pos)
+    vmc_leg_spd                              0x08001991   Thumb Code   800  vmc_math.o(.text.vmc_leg_spd)
+    wheel_leg_control_init                   0x08001cd9   Thumb Code    48  wheel_leg_control.o(.text.wheel_leg_control_init)
+    __ARM_fpclassifyf                        0x08001d0d   Thumb Code    38  fpclassifyf.o(i.__ARM_fpclassifyf)
+    __hardfp_atan2f                          0x08001d35   Thumb Code   594  atan2f.o(i.__hardfp_atan2f)
+    __hardfp_atanf                           0x08001fe1   Thumb Code   296  atanf.o(i.__hardfp_atanf)
+    __hardfp_cosf                            0x08002141   Thumb Code   280  cosf.o(i.__hardfp_cosf)
+    __hardfp_sinf                            0x08002291   Thumb Code   344  sinf.o(i.__hardfp_sinf)
+    __mathlib_flt_infnan                     0x08002421   Thumb Code     6  funder.o(i.__mathlib_flt_infnan)
+    __mathlib_flt_infnan2                    0x08002427   Thumb Code     6  funder.o(i.__mathlib_flt_infnan2)
+    __mathlib_flt_invalid                    0x0800242d   Thumb Code    10  funder.o(i.__mathlib_flt_invalid)
+    __mathlib_flt_underflow                  0x0800243d   Thumb Code    10  funder.o(i.__mathlib_flt_underflow)
+    __mathlib_rredf2                         0x0800244d   Thumb Code   316  rredf.o(i.__mathlib_rredf2)
+    __scatterload_copy                       0x080025a1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080025af   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080025b1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    __set_errno                              0x080025c1   Thumb Code     6  errno.o(i.__set_errno)
+    Region$$Table$$Base                      0x080025f4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002634   Number         0  anon$$obj.o(Region$$Table)
+    vector_table                             0x08002634   Data         328  startup_stm32f407xx.o(RESET)
+    SystemCoreClock                          0x20000004   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
+    hcan2                                    0x20000070   Data          48  can.o(.bss.hcan2)
+    __initial_sp                             0x20020000   Number         0  startup_stm32f407xx.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000001
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002788, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000277c, Max: 0x00100000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x00000000   Code   RO          472  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000000   0x08000000   0x00000004   Code   RO          534    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000004   0x08000004   0x00000004   Code   RO          537    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000008   0x08000008   0x00000000   Code   RO          539    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000008   0x08000008   0x00000000   Code   RO          541    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000008   0x08000008   0x00000008   Code   RO          542    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000010   0x08000010   0x00000000   Code   RO          544    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000010   0x08000010   0x00000000   Code   RO          546    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000010   0x08000010   0x00000004   Code   RO          535    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000014   0x08000014   0x00000024   Code   RO          475    .text               mc_w.l(memcpya.o)
+    0x08000038   0x08000038   0x00000024   Code   RO          477    .text               mc_w.l(memseta.o)
+    0x0800005c   0x0800005c   0x00000000   Code   RO          573    .text               mc_w.l(iusefp.o)
+    0x0800005c   0x0800005c   0x00000030   Code   RO          584    .text               mc_w.l(init.o)
+    0x0800008c   0x0800008c   0x0000003a   Code   RO          604    .text               mc_w.l(__dczerorl.o)
+    0x080000c6   0x080000c6   0x00000002   PAD
+    0x080000c8   0x080000c8   0x0000000a   Code   RO          107    .text.BusFault_Handler  main.o
+    0x080000d2   0x080000d2   0x00000002   PAD
+    0x080000d4   0x080000d4   0x0000000c   Code   RO           89    .text.CAN2_RX0_IRQHandler  stm32f4xx_it.o
+    0x080000e0   0x080000e0   0x00000002   Code   RO          111    .text.DebugMon_Handler  main.o
+    0x080000e2   0x080000e2   0x00000002   PAD
+    0x080000e4   0x080000e4   0x00000002   Code   RO            2    .text.Default_Handler  startup_stm32f407xx.o
+    0x080000e6   0x080000e6   0x00000002   PAD
+    0x080000e8   0x080000e8   0x00000014   Code   RO           68    .text.HAL_CAN_ActivateNotification  can.o
+    0x080000fc   0x080000fc   0x00000078   Code   RO           72    .text.HAL_CAN_AddTxMessage  can.o
+    0x08000174   0x08000174   0x000000b6   Code   RO           62    .text.HAL_CAN_ConfigFilter  can.o
+    0x0800022a   0x0800022a   0x00000002   PAD
+    0x0800022c   0x0800022c   0x00000020   Code   RO           74    .text.HAL_CAN_GetRxFifoFillLevel  can.o
+    0x0800024c   0x0800024c   0x000000a0   Code   RO           76    .text.HAL_CAN_GetRxMessage  can.o
+    0x080002ec   0x080002ec   0x00000018   Code   RO           78    .text.HAL_CAN_IRQHandler  can.o
+    0x08000304   0x08000304   0x000000d6   Code   RO           56    .text.HAL_CAN_Init  can.o
+    0x080003da   0x080003da   0x00000002   PAD
+    0x080003dc   0x080003dc   0x00000102   Code   RO          353    .text.HAL_CAN_RxFifo0MsgPendingCallback  can_driver.o
+    0x080004de   0x080004de   0x00000002   PAD
+    0x080004e0   0x080004e0   0x000000d8   Code   RO           64    .text.HAL_CAN_Start  can.o
+    0x080005b8   0x080005b8   0x00000136   Code   RO           40    .text.HAL_GPIO_Init  gpio.o
+    0x080006ee   0x080006ee   0x00000002   PAD
+    0x080006f0   0x080006f0   0x0000000c   Code   RO           20    .text.HAL_GetTick   system_stm32f4xx.o
+    0x080006fc   0x080006fc   0x00000010   Code   RO           22    .text.HAL_IncTick   system_stm32f4xx.o
+    0x0800070c   0x0800070c   0x0000000a   Code   RO           99    .text.HardFault_Handler  main.o
+    0x08000716   0x08000716   0x00000002   PAD
+    0x08000718   0x08000718   0x00000096   Code   RO           54    .text.MX_CAN2_Init  can.o
+    0x080007ae   0x080007ae   0x00000002   PAD
+    0x080007b0   0x080007b0   0x0000000a   Code   RO          109    .text.MemManage_Handler  main.o
+    0x080007ba   0x080007ba   0x00000002   PAD
+    0x080007bc   0x080007bc   0x00000002   Code   RO          103    .text.NMI_Handler   main.o
+    0x080007be   0x080007be   0x00000002   PAD
+    0x080007c0   0x080007c0   0x0000001a   Code   RO           24    .text.NVIC_EnableIRQ  system_stm32f4xx.o
+    0x080007da   0x080007da   0x00000002   PAD
+    0x080007dc   0x080007dc   0x0000000e   Code   RO           28    .text.NVIC_SetPriority  system_stm32f4xx.o
+    0x080007ea   0x080007ea   0x00000002   PAD
+    0x080007ec   0x080007ec   0x00000002   Code   RO          113    .text.PendSV_Handler  main.o
+    0x080007ee   0x080007ee   0x00000002   PAD
+    0x080007f0   0x080007f0   0x0000000a   Code   RO            4    .text.Reset_Handler  startup_stm32f407xx.o
+    0x080007fa   0x080007fa   0x00000002   PAD
+    0x080007fc   0x080007fc   0x00000004   Code   RO          101    .text.SysTick_Handler  main.o
+    0x08000800   0x08000800   0x00000032   Code   RO           16    .text.SystemInit    system_stm32f4xx.o
+    0x08000832   0x08000832   0x00000002   PAD
+    0x08000834   0x08000834   0x00000002   Code   RO          105    .text.UsageFault_Handler  main.o
+    0x08000836   0x08000836   0x00000002   PAD
+    0x08000838   0x08000838   0x00000092   Code   RO          337    .text.can_driver_init  can_driver.o
+    0x080008ca   0x080008ca   0x00000002   PAD
+    0x080008cc   0x080008cc   0x00000014   Code   RO          345    .text.can_message_available  can_driver.o
+    0x080008e0   0x080008e0   0x0000005a   Code   RO          343    .text.can_receive   can_driver.o
+    0x0800093a   0x0800093a   0x00000002   PAD
+    0x0800093c   0x0800093c   0x000000aa   Code   RO          341    .text.can_send      can_driver.o
+    0x080009e6   0x080009e6   0x00000002   PAD
+    0x080009e8   0x080009e8   0x00000004   Code   RO          347    .text.can_set_filter  can_driver.o
+    0x080009ec   0x080009ec   0x00000032   Code   RO          151    .text.dbus_init     dbus_receiver.o
+    0x08000a1e   0x08000a1e   0x00000002   PAD
+    0x08000a20   0x08000a20   0x000000ec   Code   RO          153    .text.dbus_parse_frame  dbus_receiver.o
+    0x08000b0c   0x08000b0c   0x0000002c   Code   RO          155    .text.dbus_rx_byte  dbus_receiver.o
+    0x08000b38   0x08000b38   0x00000022   Code   RO          157    .text.dbus_update_timeout  dbus_receiver.o
+    0x08000b5a   0x08000b5a   0x00000002   PAD
+    0x08000b5c   0x08000b5c   0x00000020   Code   RO          191    .text.leg_controller_init  leg_controller.o
+    0x08000b7c   0x08000b7c   0x00000012   Code   RO          211    .text.leg_update    leg_controller.o
+    0x08000b8e   0x08000b8e   0x00000002   PAD
+    0x08000b90   0x08000b90   0x00000074   Code   RO          224    .text.lqr_controller_init  lqr_controller.o
+    0x08000c04   0x08000c04   0x00000304   Code   RO          248    .text.lqr_gains_compute  lqr_gains.o
+    0x08000f08   0x08000f08   0x000000e0   Code   RO           97    .text.main          main.o
+    0x08000fe8   0x08000fe8   0x00000056   Code   RO          366    .text.motor_controller_init  motor_controller.o
+    0x0800103e   0x0800103e   0x00000002   PAD
+    0x08001040   0x08001040   0x0000006e   Code   RO          372    .text.motor_disable  motor_controller.o
+    0x080010ae   0x080010ae   0x00000002   PAD
+    0x080010b0   0x080010b0   0x00000064   Code   RO          368    .text.motor_enable  motor_controller.o
+    0x08001114   0x08001114   0x0000002c   Code   RO          370    .text.motor_get     motor_controller.o
+    0x08001140   0x08001140   0x0000005a   Code   RO          382    .text.motor_get_status  motor_controller.o
+    0x0800119a   0x0800119a   0x00000002   PAD
+    0x0800119c   0x0800119c   0x0000009c   Code   RO          374    .text.motor_set_torque  motor_controller.o
+    0x08001238   0x08001238   0x00000164   Code   RO          384    .text.motor_update  motor_controller.o
+    0x0800139c   0x0800139c   0x000000d6   Code   RO          193    .text.refresh_leg_state  leg_controller.o
+    0x08001472   0x08001472   0x00000002   PAD
+    0x08001474   0x08001474   0x000001e8   Code   RO          376    .text.send_mit_control  motor_controller.o
+    0x0800165c   0x0800165c   0x0000003c   Code   RO          140    .text.system_emergency_stop  system.o
+    0x08001698   0x08001698   0x0000005c   Code   RO          126    .text.system_init   system.o
+    0x080016f4   0x080016f4   0x00000038   Code   RO          132    .text.system_update  system.o
+    0x0800172c   0x0800172c   0x00000026   Code   RO          396    .text.uart_init     uart_interface.o
+    0x08001752   0x08001752   0x00000002   PAD
+    0x08001754   0x08001754   0x00000102   Code   RO          400    .text.uart_receive  uart_interface.o
+    0x08001856   0x08001856   0x00000002   PAD
+    0x08001858   0x08001858   0x00000138   Code   RO          323    .text.vmc_leg_pos   vmc_math.o
+    0x08001990   0x08001990   0x00000348   Code   RO          325    .text.vmc_leg_spd   vmc_math.o
+    0x08001cd8   0x08001cd8   0x00000034   Code   RO          172    .text.wheel_leg_control_init  wheel_leg_control.o
+    0x08001d0c   0x08001d0c   0x00000026   Code   RO          509    i.__ARM_fpclassifyf  m_wm.l(fpclassifyf.o)
+    0x08001d32   0x08001d32   0x00000002   PAD
+    0x08001d34   0x08001d34   0x000002ac   Code   RO          448    i.__hardfp_atan2f   m_wm.l(atan2f.o)
+    0x08001fe0   0x08001fe0   0x00000160   Code   RO          454    i.__hardfp_atanf    m_wm.l(atanf.o)
+    0x08002140   0x08002140   0x00000150   Code   RO          460    i.__hardfp_cosf     m_wm.l(cosf.o)
+    0x08002290   0x08002290   0x00000190   Code   RO          466    i.__hardfp_sinf     m_wm.l(sinf.o)
+    0x08002420   0x08002420   0x00000006   Code   RO          512    i.__mathlib_flt_infnan  m_wm.l(funder.o)
+    0x08002426   0x08002426   0x00000006   Code   RO          513    i.__mathlib_flt_infnan2  m_wm.l(funder.o)
+    0x0800242c   0x0800242c   0x00000010   Code   RO          514    i.__mathlib_flt_invalid  m_wm.l(funder.o)
+    0x0800243c   0x0800243c   0x00000010   Code   RO          517    i.__mathlib_flt_underflow  m_wm.l(funder.o)
+    0x0800244c   0x0800244c   0x00000154   Code   RO          525    i.__mathlib_rredf2  m_wm.l(rredf.o)
+    0x080025a0   0x080025a0   0x0000000e   Code   RO          598    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080025ae   0x080025ae   0x00000002   Code   RO          599    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080025b0   0x080025b0   0x0000000e   Code   RO          600    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080025be   0x080025be   0x00000002   PAD
+    0x080025c0   0x080025c0   0x0000000c   Code   RO          568    i.__set_errno       mc_w.l(errno.o)
+    0x080025cc   0x080025cc   0x00000020   Data   RO          526    .constdata          m_wm.l(rredf.o)
+    0x080025ec   0x080025ec   0x00000004   Data   RO          214    .rodata.cst4        leg_controller.o
+    0x080025f0   0x080025f0   0x00000002   Data   RO          215    .rodata.wheel_motors  leg_controller.o
+    0x080025f2   0x080025f2   0x00000002   PAD
+    0x080025f4   0x080025f4   0x00000040   Data   RO          597    Region$$Table       anon$$obj.o
+    0x08002634   0x08002634   0x00000148   Data   RW            6    RESET               startup_stm32f407xx.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0800277c, Size: 0x0000088c, Max: 0x00020000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0800277c   0x00000004   Data   RW          569    .data               mc_w.l(errno.o)
+    0x20000004   0x08002780   0x00000004   Data   RW           30    .data.SystemCoreClock  system_stm32f4xx.o
+    0x20000008   0x08002784   0x00000004   Data   RW          115    .data.bringup_motor_test_step.torque  main.o
+    0x2000000c        -       0x0000000c   Zero   RW          117    .bss..L_MergedGlobals  main.o
+    0x20000018        -       0x00000008   Zero   RW          142    .bss..L_MergedGlobals  system.o
+    0x20000020        -       0x00000030   Zero   RW          163    .bss..L_MergedGlobals  dbus_receiver.o
+    0x20000050        -       0x0000000c   Zero   RW          182    .bss..L_MergedGlobals  wheel_leg_control.o
+    0x2000005c        -       0x0000000c   Zero   RW          412    .bss..L_MergedGlobals  uart_interface.o
+    0x20000068        -       0x00000001   Zero   RW          357    .bss.driver_status  can_driver.o
+    0x20000069   0x08002788   0x00000003   PAD
+    0x2000006c        -       0x00000004   Zero   RW           31    .bss.hal_tick       system_stm32f4xx.o
+    0x20000070        -       0x00000030   Zero   RW           80    .bss.hcan2          can.o
+    0x200000a0        -       0x00000098   Zero   RW          213    .bss.legs           leg_controller.o
+    0x20000138        -       0x00000080   Zero   RW          180    .bss.lqr            wheel_leg_control.o
+    0x200001b8        -       0x00000001   Zero   RW          387    .bss.motor_count    motor_controller.o
+    0x200001b9   0x08002788   0x00000003   PAD
+    0x200001bc        -       0x000000c0   Zero   RW          386    .bss.motors         motor_controller.o
+    0x2000027c        -       0x00000100   Zero   RW          410    .bss.rx_buffer      uart_interface.o
+    0x2000037c        -       0x00000288   Zero   RW          355    .bss.rx_queue       can_driver.o
+    0x20000604        -       0x00000288   Zero   RW          356    .bss.tx_queue       can_driver.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1118          0          0          0         48       8966   can.o
+       688          0          0          0       1297       6594   can_driver.o
+       364          0          0          0         48       4301   dbus_receiver.o
+       310          0          0          0          0       2565   gpio.o
+       264          0          6          0        152       6217   leg_controller.o
+       116          0          0          0          0       3991   lqr_controller.o
+       772        200          0          0          0       1885   lqr_gains.o
+       266          0          0          4         12       2648   main.o
+      1430         60          0          0        193      10433   motor_controller.o
+        12          0          0        328          0        623   startup_stm32f407xx.o
+        12          0          0          0          0       1942   stm32f4xx_it.o
+       208          0          0          0          8       2129   system.o
+       118          0          0          4          4       1939   system_stm32f4xx.o
+       296          0          0          0        268       2611   uart_interface.o
+      1152         56          0          0          0       7456   vmc_math.o
+        52          4          0          0        140       4726   wheel_leg_control.o
+
+    ----------------------------------------------------------------------
+      7236        320         72        336       2176      69026   Object Totals
+         0          0         64          0          0          0   (incl. Generated)
+        58          0          2          0          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       684         90          0          0          0        208   atan2f.o
+       352         56          0          0          0        172   atanf.o
+       336         56          0          0          0        136   cosf.o
+        38          0          0          0          0        116   fpclassifyf.o
+        44         12          0          0          0        464   funder.o
+       340         24         32          0          0        160   rredf.o
+       400         56          0          0          0        212   sinf.o
+        58          0          0          0          0          0   __dczerorl.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        12          6          0          4          0         68   errno.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        36          0          0          0          0         68   memcpya.o
+        36          0          0          0          0        108   memseta.o
+
+    ----------------------------------------------------------------------
+      2440        318         32          4          0       1780   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      2194        294         32          0          0       1468   m_wm.l
+       240         24          0          4          0        312   mc_w.l
+
+    ----------------------------------------------------------------------
+      2440        318         32          4          0       1780   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      9676        638        104        340       2176      69838   Grand Totals
+      9676        638        104        340       2176      69838   ELF Image Totals
+      9676        638        104        340          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 9780 (   9.55kB)
+    Total RW  Size (RW Data + ZI Data)              2516 (   2.46kB)
+    Total ROM Size (Code + RO Data + RW Data)      10120 (   9.88kB)
+
+==============================================================================
+
