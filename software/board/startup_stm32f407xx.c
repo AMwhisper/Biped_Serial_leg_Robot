@@ -15,7 +15,7 @@
 __asm(".global __initial_sp\n"
       ".equ __initial_sp, 0x20020000\n");
 
-extern int main(void);
+extern void __main(void);
 extern void SystemInit(void);
 
 void Reset_Handler(void);
@@ -50,7 +50,7 @@ const void *vector_table[] = {
 
 void Reset_Handler(void) {
     SystemInit();
-    (void)main();
+    __main();
 
     while (1) {
     }

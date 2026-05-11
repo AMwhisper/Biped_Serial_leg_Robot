@@ -2,14 +2,14 @@
 
 Current hardware assignment:
 
-| Logical role | Model | Motor ID | Command CAN ID | Feedback CAN ID |
-| --- | --- | --- | --- | --- |
-| Left hip joint | DM4310 | `0x01` | `0x141` | `0x201` |
-| Left knee joint | DM4310 | `0x02` | `0x142` | `0x202` |
-| Right hip joint | DM4310 | `0x03` | `0x143` | `0x203` |
-| Right knee joint | DM4310 | `0x04` | `0x144` | `0x204` |
-| Left drive wheel | DM6215 | `0x05` | `0x145` | `0x205` |
-| Right drive wheel | DM6215 | `0x06` | `0x146` | `0x206` |
+| Logical role | Physical role | Model | Motor ID | Command CAN ID | Feedback CAN ID | Positive torque direction |
+| --- | --- | --- | --- | --- | --- | --- |
+| Left hip joint | Left thigh | DM4310 | `0x01` | `0x01` | motor feedback frame / payload ID `0x01` | TBD |
+| Left knee joint | Left leg-length/lower-leg joint | DM4310 | `0x02` | `0x02` | motor feedback frame / payload ID `0x02` | TBD |
+| Right hip joint | Right thigh | DM4310 | `0x03` | `0x03` | motor feedback frame / payload ID `0x03` | TBD |
+| Right knee joint | Right leg-length/lower-leg joint | DM4310 | `0x04` | `0x04` | motor feedback frame / payload ID `0x04` | TBD |
+| Left drive wheel | Left wheel | DM6215 | `0x05` | `0x05` | motor feedback frame / payload ID `0x05` | Forward |
+| Right drive wheel | Right wheel | DM6215 | `0x06` | `0x06` | motor feedback frame / payload ID `0x06` | Backward |
 
 Code locations:
 
@@ -19,3 +19,11 @@ Code locations:
 - `../src/leg_controller.c`: maps joints and wheels to controllers
 
 The first four motors are joints and are limited by `DM4310_*`. The last two motors are drive wheels and are limited by `DM6215_*`.
+
+CAN2 is wired on PB5/PB6 in this project. Damiaotech MIT command frames use the motor ID directly as the standard CAN ID.
+
+Wheel sign convention for high-level control:
+
+- Positive chassis forward torque should spin both wheels forward.
+- Motor `0x05` positive torque already spins the left wheel forward.
+- Motor `0x06` positive torque spins the right wheel backward, so software must invert the right wheel torque command.

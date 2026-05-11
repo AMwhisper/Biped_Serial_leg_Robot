@@ -9,7 +9,7 @@
 
 #define DBUS_CH_CENTER       1024
 #define DBUS_CH_MAX_ABS      660.0f
-#define DBUS_TIMEOUT_MS      100U
+#define DBUS_TIMEOUT_MS      300U
 #define DBUS_DEAD_BAND       20
 #define DBUS_MAX_VX          MAX_LINEAR_VELOCITY
 #define DBUS_MAX_YAW_RATE    MAX_ANGULAR_VELOCITY

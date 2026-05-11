@@ -10,6 +10,14 @@
 #define CAN_TX_PIN              GPIO_PIN_6   /* PB6, CAN2_TX */
 #define CAN_GPIO_PORT           GPIOB
 
+/* BMI088 IMU on RoboMaster C Type board, imported from Balance CubeMX setup */
+#define IMU_SPI_DEVICE          SPI1
+#define IMU_SPI_SCK_PIN         GPIO_PIN_3   /* PB3, SPI1_SCK */
+#define IMU_SPI_MISO_PIN        GPIO_PIN_4   /* PB4, SPI1_MISO */
+#define IMU_SPI_MOSI_PIN        GPIO_PIN_7   /* PA7, SPI1_MOSI */
+#define IMU_ACCEL_CS_PIN        GPIO_PIN_4   /* PA4 */
+#define IMU_GYRO_CS_PIN         GPIO_PIN_0   /* PB0 */
+
 /* Motor Update Frequency */
 #define MOTOR_CONTROL_FREQ      500          /* Hz - Main control loop frequency */
 #define MOTOR_FEEDBACK_TIMEOUT  100          /* ms - CAN feedback timeout */
@@ -32,9 +40,30 @@
 #define RIGHT_HIP_MOTOR_ID      0x03
 #define RIGHT_KNEE_MOTOR_ID     0x04
 
+/* Motor encoder angle to VMC model angle:
+ *   phi_model = motor_position * SIGN + OFFSET
+ *
+ * Leg calibration:
+ *   motor zero is the rearward maximum-leg-length pose.
+ *   virtual leg lies on the x axis, with link l1 at +45 degrees.
+ *   Left and right legs are mechanically symmetric.
+ *   Right leg: ID3 positive torque makes l1 angle smaller, so SIGN is -1.
+ *              ID4 positive torque extends the leg, matching positive phi4 near this pose.
+ */
+#define LEFT_HIP_MODEL_SIGN     -1.0f
+#define LEFT_KNEE_MODEL_SIGN     1.0f
+#define RIGHT_HIP_MODEL_SIGN    -1.0f
+#define RIGHT_KNEE_MODEL_SIGN    1.0f
+#define LEFT_HIP_MODEL_OFFSET    0.785398163f
+#define LEFT_KNEE_MODEL_OFFSET  -0.785398163f
+#define RIGHT_HIP_MODEL_OFFSET   0.785398163f
+#define RIGHT_KNEE_MODEL_OFFSET -0.785398163f
+
 /* Damiaotech 6215 Wheel Motors */
 #define LEFT_WHEEL_MOTOR_ID     0x05
 #define RIGHT_WHEEL_MOTOR_ID    0x06
+#define LEFT_WHEEL_TORQUE_SIGN  1.0f
+#define RIGHT_WHEEL_TORQUE_SIGN -1.0f
 
 /* ==================== System Parameters ==================== */
 

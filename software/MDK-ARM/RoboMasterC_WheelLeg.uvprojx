@@ -10,13 +10,13 @@
       <TargetName>RoboMasterC_WheelLeg</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6210000::V6.21::ARMCLANG</pCCUsed>
+      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F407IGHx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.3.0.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.17.1</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2001FFFF) IROM(0x8000000-0x80FFFFF) CPUTYPE("Cortex-M4") FPU2 CLOCK(168000000)</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -340,7 +340,7 @@
               <MiscControls>--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11</MiscControls>
               <Define>STM32F407xx,STM32F407IGHx,_USE_LEGACY_HAL</Define>
               <Undefine></Undefine>
-              <IncludePath>..\include;..\board;..\..\config;RTE\_RoboMasterC_WheelLeg</IncludePath>
+              <IncludePath>..\include;..\board;..\..\config;..\third_party\balance\Drivers\CMSIS\Include;..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc;..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy;..\third_party\balance\FML\bmi088;..\third_party\balance\FML\ekf;RTE\_RoboMasterC_WheelLeg</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -358,7 +358,7 @@
               <MiscControls>--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\include;..\board;..\..\config;RTE\_RoboMasterC_WheelLeg</IncludePath>
+              <IncludePath>..\include;..\board;..\..\config;..\third_party\balance\Drivers\CMSIS\Include;..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc;..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy;..\third_party\balance\FML\bmi088;..\third_party\balance\FML\ekf;RTE\_RoboMasterC_WheelLeg</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -385,9 +385,9 @@
           <GroupName>Board</GroupName>
           <Files>
             <File>
-              <FileName>startup_stm32f407xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\board\startup_stm32f407xx.c</FilePath>
+              <FileName>startup_stm32f407xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\board\startup_stm32f407xx.s</FilePath>
             </File>
             <File>
               <FileName>system_stm32f4xx.c</FileName>
@@ -408,6 +408,131 @@
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\board\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_msp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\stm32f4xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_timebase_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\stm32f4xx_hal_timebase_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>error_handler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\error_handler.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STM32HAL</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f4xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rcc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_dma_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_tim_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_pwr_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_flash_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -433,6 +558,51 @@
               <FileName>wheel_leg_control.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\wheel_leg_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>balance_feedback.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\balance_feedback.c</FilePath>
+            </File>
+            <File>
+              <FileName>attitude_imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\attitude_imu.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BalanceThirdParty</GroupName>
+          <Files>
+            <File>
+              <FileName>BMI088driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\bmi088\BMI088driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>BMI088middleware.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\bmi088\BMI088middleware.c</FilePath>
+            </File>
+            <File>
+              <FileName>orientation_ekf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\ekf\orientation_ekf.c</FilePath>
+            </File>
+            <File>
+              <FileName>matrix3x3d.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\ekf\matrix3x3d.c</FilePath>
+            </File>
+            <File>
+              <FileName>vector3d.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\ekf\vector3d.c</FilePath>
+            </File>
+            <File>
+              <FileName>so3_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_party\balance\FML\ekf\so3_helper.c</FilePath>
             </File>
           </Files>
         </Group>

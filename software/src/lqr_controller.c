@@ -22,7 +22,7 @@ bool lqr_controller_init(lqr_controller_t *controller, float leg_length) {
     
     /* Set default configuration */
     controller->config.leg_length = leg_length;
-    controller->config.sampling_period = 0.005f;  /* 5ms sampling */
+    controller->config.sampling_period = 0.002f;  /* 500 Hz control loop */
     controller->config.enable_saturation = true;
     controller->config.torque_limit = 10.0f;      /* 10 Nm limit */
     

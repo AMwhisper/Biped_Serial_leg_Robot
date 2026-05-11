@@ -26,7 +26,10 @@ typedef struct {
     float target_velocity;   // Target velocity
     float target_position;   // Target position
     uint16_t temperature;    // Motor temperature
+    uint8_t status_code;      // Damiaotech feedback status/error nibble
+    uint32_t last_feedback_ms; // Timestamp of latest valid feedback
     bool enabled;            // Motor enabled flag
+    bool feedback_seen;       // At least one valid feedback frame received
 } motor_t;
 
 /* Function declarations */
@@ -60,6 +63,23 @@ bool motor_disable(uint8_t motor_id);
 bool motor_set_torque(uint8_t motor_id, float torque);
 
 /**
+ * @brief Set motor speed using Damiaotech speed-mode frame (0x200 + ID)
+ * @param motor_id Motor ID
+ * @param speed Desired speed in rad/s
+ * @return true if successful
+ */
+bool motor_set_speed_mode(uint8_t motor_id, float speed);
+
+/**
+ * @brief Set motor position/speed using Damiaotech PV-mode frame (0x100 + ID)
+ * @param motor_id Motor ID
+ * @param position Desired position in radians
+ * @param speed Desired speed in rad/s
+ * @return true if successful
+ */
+bool motor_set_position_velocity_mode(uint8_t motor_id, float position, float speed);
+
+/**
  * @brief Set motor speed command
  * @param motor_id Motor ID
  * @param speed Desired speed in rad/s
@@ -82,6 +102,15 @@ bool motor_set_position(uint8_t motor_id, float position);
  * @return true if successful
  */
 bool motor_get_status(uint8_t motor_id, motor_t *motor);
+
+/**
+ * @brief Check whether a motor has recent feedback
+ * @param motor_id Motor ID
+ * @param now_ms Current system time in milliseconds
+ * @param timeout_ms Feedback timeout in milliseconds
+ * @return true if feedback has been seen within timeout
+ */
+bool motor_feedback_recent(uint8_t motor_id, uint32_t now_ms, uint32_t timeout_ms);
 
 /**
  * @brief Update all motors (main loop call)

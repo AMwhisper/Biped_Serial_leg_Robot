@@ -17,13 +17,46 @@ static const uint8_t joint_motors[LEG_COUNT][2] = {
     {RIGHT_HIP_MOTOR_ID, RIGHT_KNEE_MOTOR_ID},
 };
 
+static const float joint_model_signs[LEG_COUNT][2] = {
+    {LEFT_HIP_MODEL_SIGN, LEFT_KNEE_MODEL_SIGN},
+    {RIGHT_HIP_MODEL_SIGN, RIGHT_KNEE_MODEL_SIGN},
+};
+
+static const float joint_model_offsets[LEG_COUNT][2] = {
+    {LEFT_HIP_MODEL_OFFSET, LEFT_KNEE_MODEL_OFFSET},
+    {RIGHT_HIP_MODEL_OFFSET, RIGHT_KNEE_MODEL_OFFSET},
+};
+
 static const uint8_t wheel_motors[LEG_COUNT] = {
     LEFT_WHEEL_MOTOR_ID,
     RIGHT_WHEEL_MOTOR_ID,
 };
 
+static const float wheel_torque_signs[LEG_COUNT] = {
+    LEFT_WHEEL_TORQUE_SIGN,
+    RIGHT_WHEEL_TORQUE_SIGN,
+};
+
 static bool valid_leg(leg_id_t leg_id) {
     return leg_id >= LEG_LEFT && leg_id < LEG_COUNT;
+}
+
+static float motor_to_model_angle(leg_id_t leg_id, uint8_t joint_index, float motor_angle) {
+    return motor_angle * joint_model_signs[leg_id][joint_index] +
+           joint_model_offsets[leg_id][joint_index];
+}
+
+static float motor_to_model_velocity(leg_id_t leg_id, uint8_t joint_index, float motor_velocity) {
+    return motor_velocity * joint_model_signs[leg_id][joint_index];
+}
+
+static float model_to_motor_angle(leg_id_t leg_id, uint8_t joint_index, float model_angle) {
+    return (model_angle - joint_model_offsets[leg_id][joint_index]) *
+           joint_model_signs[leg_id][joint_index];
+}
+
+static float model_to_motor_torque(leg_id_t leg_id, uint8_t joint_index, float model_torque) {
+    return model_torque * joint_model_signs[leg_id][joint_index];
 }
 
 static void refresh_leg_state(leg_id_t leg_id) {
@@ -32,17 +65,17 @@ static void refresh_leg_state(leg_id_t leg_id) {
     for (uint8_t i = 0; i < 2; ++i) {
         motor_t *motor = motor_get(joint_motors[leg_id][i]);
         if (motor != NULL) {
-            leg->joint_angles[i] = motor->position;
-            leg->joint_velocities[i] = motor->velocity;
-            leg->joint_torques[i] = motor->torque;
+            leg->joint_angles[i] = motor_to_model_angle(leg_id, i, motor->position);
+            leg->joint_velocities[i] = motor_to_model_velocity(leg_id, i, motor->velocity);
+            leg->joint_torques[i] = model_to_motor_torque(leg_id, i, motor->torque);
         }
     }
 
     motor_t *wheel = motor_get(wheel_motors[leg_id]);
     if (wheel != NULL) {
-        leg->wheel_position = wheel->position;
-        leg->wheel_velocity = wheel->velocity;
-        leg->wheel_torque = wheel->torque;
+        leg->wheel_position = wheel->position * wheel_torque_signs[leg_id];
+        leg->wheel_velocity = wheel->velocity * wheel_torque_signs[leg_id];
+        leg->wheel_torque = wheel->torque * wheel_torque_signs[leg_id];
     }
 
     float pos[2];
@@ -82,8 +115,10 @@ bool leg_set_position(leg_id_t leg_id, const leg_position_t *pos) {
         return false;
     }
 
-    return motor_set_position(joint_motors[leg_id][0], angles[0]) &&
-           motor_set_position(joint_motors[leg_id][1], angles[1]);
+    return motor_set_position(joint_motors[leg_id][0],
+                              model_to_motor_angle(leg_id, 0U, angles[0])) &&
+           motor_set_position(joint_motors[leg_id][1],
+                              model_to_motor_angle(leg_id, 1U, angles[1]));
 }
 
 bool leg_set_velocity(leg_id_t leg_id, const leg_velocity_t *vel) {
@@ -110,8 +145,10 @@ bool leg_set_torques(leg_id_t leg_id, const float torques[2]) {
         return false;
     }
 
-    return motor_set_torque(joint_motors[leg_id][0], torques[0]) &&
-           motor_set_torque(joint_motors[leg_id][1], torques[1]);
+    return motor_set_torque(joint_motors[leg_id][0],
+                            model_to_motor_torque(leg_id, 0U, torques[0])) &&
+           motor_set_torque(joint_motors[leg_id][1],
+                            model_to_motor_torque(leg_id, 1U, torques[1]));
 }
 
 bool leg_set_virtual_force(leg_id_t leg_id, float axial_force, float leg_torque) {
@@ -132,7 +169,7 @@ bool leg_set_wheel_torque(leg_id_t leg_id, float wheel_torque) {
         return false;
     }
 
-    return motor_set_torque(wheel_motors[leg_id], wheel_torque);
+    return motor_set_torque(wheel_motors[leg_id], wheel_torque * wheel_torque_signs[leg_id]);
 }
 
 bool leg_forward_kinematics(const float angles[2], leg_position_t *position) {

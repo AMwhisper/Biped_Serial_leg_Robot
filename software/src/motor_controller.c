@@ -9,6 +9,8 @@
 #include <math.h>
 #include <string.h>
 
+extern uint32_t HAL_GetTick(void);
+
 static motor_t motors[TOTAL_MOTORS];
 static uint8_t motor_count;
 
@@ -87,12 +89,13 @@ static can_status_t send_mit_control(uint8_t motor_id, float p, float v, float k
     return can_send(&msg);
 }
 
+static void put_float_le(uint8_t *dst, float value) {
+    memcpy(dst, &value, sizeof(value));
+}
+
 static uint8_t feedback_id_from_frame(const can_message_t *msg) {
-    if (msg->dlc >= 6U) {
-        uint8_t id = msg->data[0] & 0x0FU;
-        if (id >= 1U && id <= TOTAL_MOTORS) {
-            return id;
-        }
+    if (msg->can_id >= 1U && msg->can_id <= TOTAL_MOTORS) {
+        return (uint8_t)msg->can_id;
     }
 
     if (msg->can_id >= CAN_MOTOR_FEEDBACK_ID + 1U &&
@@ -100,8 +103,11 @@ static uint8_t feedback_id_from_frame(const can_message_t *msg) {
         return (uint8_t)(msg->can_id - CAN_MOTOR_FEEDBACK_ID);
     }
 
-    if (msg->can_id >= 1U && msg->can_id <= TOTAL_MOTORS) {
-        return (uint8_t)msg->can_id;
+    if (msg->dlc >= 6U) {
+        uint8_t id = msg->data[0] & 0x0FU;
+        if (id >= 1U && id <= TOTAL_MOTORS) {
+            return id;
+        }
     }
 
     return 0U;
@@ -120,6 +126,10 @@ static void parse_feedback(const can_message_t *msg) {
     motor_t *motor = &motors[motor_id - 1U];
     float v_max = motor_speed_limit(motor);
     float t_max = motor_torque_limit(motor);
+
+    motor->status_code = msg->data[0] >> 4;
+    motor->last_feedback_ms = HAL_GetTick();
+    motor->feedback_seen = true;
 
     uint16_t p_int = ((uint16_t)msg->data[1] << 8) | msg->data[2];
     uint16_t v_int = ((uint16_t)msg->data[3] << 4) | (msg->data[4] >> 4);
@@ -187,6 +197,45 @@ bool motor_set_torque(uint8_t motor_id, float torque) {
     return send_mit_control(motor_id, 0.0f, 0.0f, 0.0f, 0.0f, motor->target_torque) == CAN_STATUS_OK;
 }
 
+bool motor_set_speed_mode(uint8_t motor_id, float speed) {
+    motor_t *motor = motor_get(motor_id);
+    if (motor == NULL || !motor->enabled) {
+        return false;
+    }
+
+    motor->target_velocity = clamp_value(speed, -motor_speed_limit(motor), motor_speed_limit(motor));
+    motor->target_position = 0.0f;
+    motor->target_torque = 0.0f;
+
+    can_message_t msg;
+    memset(&msg, 0, sizeof(msg));
+    msg.can_id = 0x200U + motor_id;
+    msg.dlc = 4U;
+    put_float_le(&msg.data[0], motor->target_velocity);
+
+    return can_send(&msg) == CAN_STATUS_OK;
+}
+
+bool motor_set_position_velocity_mode(uint8_t motor_id, float position, float speed) {
+    motor_t *motor = motor_get(motor_id);
+    if (motor == NULL || !motor->enabled) {
+        return false;
+    }
+
+    motor->target_position = clamp_value(position, DM_MIT_P_MIN, DM_MIT_P_MAX);
+    motor->target_velocity = clamp_value(speed, -motor_speed_limit(motor), motor_speed_limit(motor));
+    motor->target_torque = 0.0f;
+
+    can_message_t msg;
+    memset(&msg, 0, sizeof(msg));
+    msg.can_id = 0x100U + motor_id;
+    msg.dlc = 8U;
+    put_float_le(&msg.data[0], motor->target_position);
+    put_float_le(&msg.data[4], motor->target_velocity);
+
+    return can_send(&msg) == CAN_STATUS_OK;
+}
+
 bool motor_set_speed(uint8_t motor_id, float speed) {
     motor_t *motor = motor_get(motor_id);
     if (motor == NULL || !motor->enabled) {
@@ -221,6 +270,15 @@ bool motor_get_status(uint8_t motor_id, motor_t *motor) {
 
     memcpy(motor, src, sizeof(*motor));
     return true;
+}
+
+bool motor_feedback_recent(uint8_t motor_id, uint32_t now_ms, uint32_t timeout_ms) {
+    motor_t *motor = motor_get(motor_id);
+    if (motor == NULL || !motor->feedback_seen) {
+        return false;
+    }
+
+    return (now_ms - motor->last_feedback_ms) <= timeout_ms;
 }
 
 bool motor_update(void) {

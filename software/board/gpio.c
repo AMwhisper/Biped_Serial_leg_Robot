@@ -1,52 +1,83 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file    gpio.c
+  * @brief   This file provides code for the configuration
+  *          of all used GPIO pins.
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2026 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
-#include "stm32f4xx_hal.h"
 
-void HAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_InitTypeDef *GPIO_Init) {
-    if (GPIOx == 0 || GPIO_Init == 0) {
-        return;
-    }
+/* USER CODE BEGIN 0 */
 
-    for (uint32_t pin = 0; pin < 16U; ++pin) {
-        uint32_t mask = 1UL << pin;
-        if ((GPIO_Init->Pin & mask) == 0U) {
-            continue;
-        }
+/* USER CODE END 0 */
 
-        GPIOx->MODER &= ~(3UL << (pin * 2U));
-        GPIOx->MODER |= ((GPIO_Init->Mode & 3U) << (pin * 2U));
+/*----------------------------------------------------------------------------*/
+/* Configure GPIO                                                             */
+/*----------------------------------------------------------------------------*/
+/* USER CODE BEGIN 1 */
 
-        GPIOx->PUPDR &= ~(3UL << (pin * 2U));
-        GPIOx->PUPDR |= ((GPIO_Init->Pull & 3U) << (pin * 2U));
+/* USER CODE END 1 */
 
-        GPIOx->OSPEEDR &= ~(3UL << (pin * 2U));
-        GPIOx->OSPEEDR |= ((GPIO_Init->Speed & 3U) << (pin * 2U));
+/** Configure pins as
+        * Analog
+        * Input
+        * Output
+        * EVENT_OUT
+        * EXTI
+*/
+void MX_GPIO_Init(void)
+{
 
-        uint32_t afr_index = pin / 8U;
-        uint32_t afr_shift = (pin % 8U) * 4U;
-        GPIOx->AFR[afr_index] &= ~(0xFUL << afr_shift);
-        GPIOx->AFR[afr_index] |= ((GPIO_Init->Alternate & 0xFU) << afr_shift);
-    }
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(CS_Accel_GPIO_Port, CS_Accel_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(CS_Gyro_GPIO_Port, CS_Gyro_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : CS_Accel_Pin */
+  GPIO_InitStruct.Pin = CS_Accel_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(CS_Accel_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : INT_Accel_Pin INT_Gyro_Pin */
+  GPIO_InitStruct.Pin = INT_Accel_Pin|INT_Gyro_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : CS_Gyro_Pin */
+  GPIO_InitStruct.Pin = CS_Gyro_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(CS_Gyro_GPIO_Port, &GPIO_InitStruct);
+
 }
 
-void HAL_GPIO_DeInit(GPIO_TypeDef *GPIOx, uint32_t GPIO_Pin) {
-    if (GPIOx == 0) {
-        return;
-    }
+/* USER CODE BEGIN 2 */
 
-    for (uint32_t pin = 0; pin < 16U; ++pin) {
-        uint32_t mask = 1UL << pin;
-        if ((GPIO_Pin & mask) == 0U) {
-            continue;
-        }
-
-        GPIOx->MODER &= ~(3UL << (pin * 2U));
-        GPIOx->PUPDR &= ~(3UL << (pin * 2U));
-        GPIOx->OSPEEDR &= ~(3UL << (pin * 2U));
-        GPIOx->OTYPER &= ~mask;
-        GPIOx->AFR[pin / 8U] &= ~(0xFUL << ((pin % 8U) * 4U));
-    }
-}
-
-void MX_GPIO_Init(void) {
-    __HAL_RCC_GPIOB_CLK_ENABLE();
-}
+/* USER CODE END 2 */

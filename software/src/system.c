@@ -13,6 +13,9 @@
 #include "motor_config.h"
 #include "uart_interface.h"
 #include "wheel_leg_control.h"
+#include "balance_feedback.h"
+#include "attitude_imu.h"
+#include "bringup_config.h"
 #include <string.h>
 #include <stdio.h>
 
@@ -66,6 +69,12 @@ bool system_init(void) {
         system_state = SYS_STATE_ERROR;
         return false;
     }
+
+    balance_feedback_init();
+
+#if BRINGUP_ENABLE_IMU_FEEDBACK
+    (void)attitude_imu_init();
+#endif
 
     // TODO: Initialize other subsystems
     // - Power management

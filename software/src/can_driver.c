@@ -147,6 +147,14 @@ can_status_t can_send(const can_message_t *msg) {
 #if CAN_DRIVER_USE_HAL
     CAN_TxHeaderTypeDef header;
     uint32_t mailbox;
+    uint32_t start_ms = HAL_GetTick();
+
+    while (HAL_CAN_GetTxMailboxesFreeLevel(&CAN_DRIVER_HANDLE) == 0U) {
+        if (HAL_GetTick() - start_ms > 2U) {
+            driver_status = CAN_STATUS_TIMEOUT;
+            return CAN_STATUS_TIMEOUT;
+        }
+    }
 
     memset(&header, 0, sizeof(header));
     header.StdId = msg->can_id & 0x7FFU;
@@ -249,7 +257,6 @@ void can_rx_isr_handler(uint8_t *data, uint32_t can_id, uint8_t dlc) {
 }
 
 #if CAN_DRIVER_USE_HAL
-__attribute__((weak))
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     CAN_RxHeaderTypeDef header;
     uint8_t data[8];

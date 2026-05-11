@@ -29,7 +29,7 @@ Then remove or exclude the local minimal files:
 
 ## 2. CAN Configuration
 
-Create `hcan2` in `can.c` and configure CAN at 1 Mbps. The local board layer uses CAN2 on PB12/PB13. A common 42 MHz APB1 setup is:
+Create `hcan2` in `can.c` and configure CAN at 1 Mbps. The local board layer uses CAN2 on PB5/PB6. A common 42 MHz APB1 setup is:
 
 - Prescaler: `3`
 - BS1: `CAN_BS1_11TQ`

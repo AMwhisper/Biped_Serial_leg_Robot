@@ -4,6 +4,7 @@
  */
 
 #include "wheel_leg_control.h"
+#include "bringup_config.h"
 #include "hardware_config.h"
 #include "leg_controller.h"
 #include "lqr_controller.h"
@@ -42,7 +43,7 @@ bool wheel_leg_control_init(void) {
         return false;
     }
 
-    lqr.config.torque_limit = DM6215_MAX_TORQUE;
+    lqr.config.torque_limit = BRINGUP_BALANCE_TORQUE_LIMIT_NM;
     initialized = true;
     enabled = false;
     return true;
@@ -119,8 +120,8 @@ bool wheel_leg_control_update(const wheel_leg_feedback_t *feedback, wheel_leg_ou
     hold_force = clampf(hold_force, -80.0f, 80.0f);
 
     wheel_leg_output_t local = {
-        .wheel_torque_left = u[0] - command.target_yaw_rate * YAW_TORQUE_GAIN,
-        .wheel_torque_right = u[0] + command.target_yaw_rate * YAW_TORQUE_GAIN,
+        .wheel_torque_left = u[0] + command.target_yaw_rate * YAW_TORQUE_GAIN,
+        .wheel_torque_right = u[0] - command.target_yaw_rate * YAW_TORQUE_GAIN,
         .leg_force_left = hold_force,
         .leg_force_right = hold_force,
         .leg_torque_left = u[1],
