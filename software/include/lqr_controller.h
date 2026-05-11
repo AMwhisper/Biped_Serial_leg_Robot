@@ -4,9 +4,12 @@
  * @author Team
  * @date 2026-05-09
  * 
- * Based on sys_calc.m:
+ * Based on sys_calc.m and the single-side equivalent-pendulum model:
  * - State: [theta, dtheta, x, dx, phi, dphi] (6D)
- * - Control: [T, Tp] (2D torques)
+ * - phi and dphi come from the VMC equivalent pendulum polar angle and speed
+ * - Control: [T, Tp] (2D)
+ * - T is the wheel/body drive output used by the wheel motor
+ * - Tp is the virtual pendulum/leg angular torque passed to VMC
  * - Sampling period: 5ms
  * - Weight matrices: Q = diag([1, 10, 100, 20, 1000, 1]), R = diag([1, 1])
  */
@@ -27,8 +30,8 @@ typedef struct {
     float dtheta;     // Body angular velocity (rad/s)
     float x;          // Horizontal position (m)
     float dx;         // Horizontal velocity (m/s)
-    float phi;        // Leg angle (rad)
-    float dphi;       // Leg angular velocity (rad/s)
+    float phi;        // Equivalent pendulum polar angle from VMC pos[1] (rad)
+    float dphi;       // Equivalent pendulum polar angular speed from VMC spd[1] (rad/s)
 } lqr_state_t;
 
 /* LQR controller configuration */
@@ -44,7 +47,7 @@ typedef struct {
 /* LQR controller state */
 typedef struct {
     lqr_state_t state;
-    float torque_cmd[2];      // Control torques [T, Tp]
+    float torque_cmd[2];      // Control output [T, Tp]
     float gain_matrix[2][6];  // K: Feedback gain matrix (2x6)
     lqr_config_t config;
 } lqr_controller_t;

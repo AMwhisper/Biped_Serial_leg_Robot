@@ -1,15 +1,8 @@
 robomasterc_wheelleg/main.o: ..\src\main.c \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h ..\include\system.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\include\system.h \
-  ..\..\config\bringup_config.h ..\include\can_driver.h \
-  ..\include\dbus_receiver.h ..\include\motor_controller.h \
-  ..\include\leg_controller.h ..\..\config\motor_config.h \
-  ..\..\config\hardware_config.h ..\include\uart_interface.h \
-  ..\include\wheel_leg_control.h ..\include\balance_feedback.h \
-  ..\include\attitude_imu.h ..\board\stm32f4xx_hal.h \
+  ..\include\motor_controller.h ..\..\config\motor_config.h \
+  ..\board\stm32f4xx_hal.h \
   ..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\board\stm32f4xx_hal_conf.h \
   ..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \

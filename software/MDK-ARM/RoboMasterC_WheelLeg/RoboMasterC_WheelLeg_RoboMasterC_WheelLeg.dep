@@ -1027,24 +1027,12 @@ I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-F (..\src\main.c)(0x6A017D4E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/main.o -MD)
+F (..\src\main.c)(0x6A01E30F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/main.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 I (..\include\system.h)(0x69FE3C1E)
-I (..\..\config\bringup_config.h)(0x6A019B62)
-I (..\include\can_driver.h)(0x69FF3D65)
-I (..\include\dbus_receiver.h)(0x6A004BA6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
 I (..\include\motor_controller.h)(0x6A00FC4A)
-I (..\include\leg_controller.h)(0x69FF3848)
 I (..\..\config\motor_config.h)(0x6A0061E7)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
-I (..\include\uart_interface.h)(0x6A004BFC)
-I (..\include\wheel_leg_control.h)(0x6A004BD7)
-I (..\include\balance_feedback.h)(0x6A00D341)
-I (..\include\attitude_imu.h)(0x6A00D4CE)
 I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
 I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
 I (..\board\stm32f4xx_hal_conf.h)(0x69FF5D44)
@@ -1080,57 +1068,13 @@ I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-F (..\src\system.c)(0x6A00D4CE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/system.o -MD)
+F (..\src\system.c)(0x6A01E350)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/system.o -MD)
 I (..\include\system.h)(0x69FE3C1E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
 I (..\include\can_driver.h)(0x69FF3D65)
-I (..\include\dbus_receiver.h)(0x6A004BA6)
 I (..\include\motor_controller.h)(0x6A00FC4A)
-I (..\include\leg_controller.h)(0x69FF3848)
 I (..\..\config\motor_config.h)(0x6A0061E7)
-I (..\include\uart_interface.h)(0x6A004BFC)
-I (..\include\wheel_leg_control.h)(0x6A004BD7)
-I (..\include\balance_feedback.h)(0x6A00D341)
-I (..\include\attitude_imu.h)(0x6A00D4CE)
-I (..\..\config\bringup_config.h)(0x6A019B62)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-F (..\src\dbus_receiver.c)(0x6A017D3D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/dbus_receiver.o -MD)
-I (..\include\dbus_receiver.h)(0x6A004BA6)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\wheel_leg_control.c)(0x6A017A43)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/wheel_leg_control.o -MD)
-I (..\include\wheel_leg_control.h)(0x6A004BD7)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\config\bringup_config.h)(0x6A019B62)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
-I (..\include\leg_controller.h)(0x69FF3848)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\include\lqr_controller.h)(0x69FE3E32)
-I (..\..\config\motor_config.h)(0x6A0061E7)
-I (..\include\motor_controller.h)(0x6A00FC4A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\balance_feedback.c)(0x6A017A2A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/balance_feedback.o -MD)
-I (..\include\balance_feedback.h)(0x6A00D341)
-I (..\include\wheel_leg_control.h)(0x6A004BD7)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
-I (..\include\motor_controller.h)(0x6A00FC4A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\attitude_imu.c)(0x6A00D4CE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/attitude_imu.o -MD)
-I (..\include\attitude_imu.h)(0x6A00D4CE)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\include\balance_feedback.h)(0x6A00D341)
-I (..\include\wheel_leg_control.h)(0x6A004BD7)
-I (..\third_party\balance\FML\bmi088\BMI088driver.h)(0x6A00D596)
-I (..\third_party\balance\FML\bmi088\BMI088reg.h)(0x69FF5D44)
-I (..\third_party\balance\FML\bmi088\BMI088middleware.h)(0x6A00E694)
 I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
 I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
 I (..\board\stm32f4xx_hal_conf.h)(0x69FF5D44)
@@ -1166,131 +1110,18 @@ I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
 I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-I (..\board\spi.h)(0x69FF5D44)
-I (..\board\main.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\orientation_ekf.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (..\third_party\balance\FML\ekf\matrix3x3d.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\vector3d.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\so3_helper.h)(0x69FF5D44)
-F (..\third_party\balance\FML\bmi088\BMI088driver.c)(0x69FF5D44)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/bmi088driver.o -MD)
-I (..\third_party\balance\FML\bmi088\BMI088driver.h)(0x6A00D596)
-I (..\third_party\balance\FML\bmi088\BMI088reg.h)(0x69FF5D44)
-I (..\third_party\balance\FML\bmi088\BMI088middleware.h)(0x6A00E694)
-I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
-I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
-I (..\board\stm32f4xx_hal_conf.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\core_cm4.h)(0x69FF5D44)
+F (..\src\right_side_control.c)(0x6A01ECC6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/right_side_control.o -MD)
+I (..\include\right_side_control.h)(0x6A01ECAC)
+I (..\include\lqr_controller.h)(0x6A01E898)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_version.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_compiler.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_armclang.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\mpu_armv7.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-I (..\board\spi.h)(0x69FF5D44)
-I (..\board\main.h)(0x69FF5D44)
-F (..\third_party\balance\FML\bmi088\BMI088middleware.c)(0x6A00D4A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/bmi088middleware.o -MD)
-I (..\third_party\balance\FML\bmi088\BMI088middleware.h)(0x6A00E694)
-I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
-I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
-I (..\board\stm32f4xx_hal_conf.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\core_cm4.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_version.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_compiler.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_armclang.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\mpu_armv7.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-I (..\board\spi.h)(0x69FF5D44)
-I (..\board\main.h)(0x69FF5D44)
-F (..\third_party\balance\FML\ekf\orientation_ekf.c)(0x69FF5D44)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/orientation_ekf.o -MD)
-I (..\third_party\balance\FML\ekf\orientation_ekf.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\third_party\balance\FML\ekf\matrix3x3d.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\vector3d.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\so3_helper.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-F (..\third_party\balance\FML\ekf\matrix3x3d.c)(0x69FF5D44)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/matrix3x3d.o -MD)
-I (..\third_party\balance\FML\ekf\matrix3x3d.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\vector3d.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\third_party\balance\FML\ekf\vector3d.c)(0x69FF5D44)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/vector3d.o -MD)
-I (..\third_party\balance\FML\ekf\vector3d.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\third_party\balance\FML\ekf\so3_helper.c)(0x6A00D596)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/so3_helper.o -MD)
-I (..\third_party\balance\FML\ekf\so3_helper.h)(0x69FF5D44)
-I (..\third_party\balance\FML\ekf\vector3d.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (..\third_party\balance\FML\ekf\matrix3x3d.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\leg_controller.c)(0x6A019B46)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/leg_controller.o -MD)
-I (..\include\leg_controller.h)(0x69FF3848)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
+I (..\..\config\hardware_config.h)(0x6A01E86C)
 I (..\include\motor_controller.h)(0x6A00FC4A)
-I (..\include\vmc_math.h)(0x69FF3800)
+I (..\include\vmc_math.h)(0x6A01E889)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
 F (..\src\lqr_controller.c)(0x6A00D342)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_controller.o -MD)
-I (..\include\lqr_controller.h)(0x69FE3E32)
+I (..\include\lqr_controller.h)(0x6A01E898)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
 I (..\include\lqr_gains.h)(0x69FE3E32)
@@ -1299,34 +1130,14 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 F (..\src\lqr_gains.c)(0x69FF387F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_gains.o -MD)
 I (..\include\lqr_gains.h)(0x69FE3E32)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-F (..\src\lqr_system.c)(0x69FF388E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/lqr_system.o -MD)
-I (..\include\lqr_system.h)(0x69FE3E32)
-I (..\include\lqr_controller.h)(0x69FE3E32)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\include\flight_controller.h)(0x69FE3E32)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\flight_controller.c)(0x69FE3E32)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/flight_controller.o -MD)
-I (..\include\flight_controller.h)(0x69FE3E32)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-F (..\src\motion_planner.c)(0x69FF391F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/motion_planner.o -MD)
-I (..\include\motion_planner.h)(0x69FE3C1E)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\include\leg_controller.h)(0x69FF3848)
-I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
 F (..\src\vmc_math.c)(0x69FF3839)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/vmc_math.o -MD)
-I (..\include\vmc_math.h)(0x69FF3800)
+I (..\include\vmc_math.h)(0x6A01E889)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 F (..\src\can_driver.c)(0x6A016C40)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/can_driver.o -MD)
 I (..\include\can_driver.h)(0x69FF3D65)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\config\hardware_config.h)(0x6A019BD3)
+I (..\..\config\hardware_config.h)(0x6A01E86C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
 I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
 I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
@@ -1373,60 +1184,6 @@ I (..\include\can_driver.h)(0x69FF3D65)
 I (..\..\config\motor_config.h)(0x6A0061E7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\uart_interface.c)(0x6A017D6D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/uart_interface.o -MD)
-I (..\include\uart_interface.h)(0x6A004BFC)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\board\dma.h)(0x69FF5D44)
-I (..\board\main.h)(0x69FF5D44)
-I (..\board\stm32f4xx_hal.h)(0x6A00E62F)
-I (..\board\..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x69FF5D44)
-I (..\board\stm32f4xx_hal_conf.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\core_cm4.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_version.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_compiler.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\cmsis_armclang.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Include\mpu_armv7.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x69FF5D44)
-I (..\third_party\balance\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x69FF5D44)
-I (..\include\dbus_receiver.h)(0x6A004BA6)
-I (..\board\usart.h)(0x69FF5D44)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-F (..\src\data_logger.c)(0x69FE3C1E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../include -I ../board -I ../../config -I ../third_party/balance/Drivers/CMSIS/Include -I ../third_party/balance/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc -I ../third_party/balance/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../third_party/balance/FML/bmi088 -I ../third_party/balance/FML/ekf -I RTE/_RoboMasterC_WheelLeg --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=c11-IC:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -DSTM32F407xx -DSTM32F407xx -DSTM32F407IGHx -D_USE_LEGACY_HAL-o robomasterc_wheelleg/data_logger.o -MD)
-I (..\include\data_logger.h)(0x69FE3C1E)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\include\motor_controller.h)(0x6A00FC4A)
-I (..\include\leg_controller.h)(0x69FF3848)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-F (..\..\config\hardware_config.h)(0x6A019BD3)()
+F (..\..\config\hardware_config.h)(0x6A01E86C)()
 F (..\..\config\motor_config.h)(0x6A0061E7)()
-F (..\..\config\bringup_config.h)(0x6A019B62)()
+F (..\..\config\bringup_config.h)(0x6A01E407)()

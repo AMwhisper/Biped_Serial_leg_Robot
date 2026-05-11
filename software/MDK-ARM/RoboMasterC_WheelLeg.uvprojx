@@ -549,70 +549,20 @@
               <FileType>1</FileType>
               <FilePath>..\src\system.c</FilePath>
             </File>
-            <File>
-              <FileName>dbus_receiver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\dbus_receiver.c</FilePath>
-            </File>
-            <File>
-              <FileName>wheel_leg_control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\wheel_leg_control.c</FilePath>
-            </File>
-            <File>
-              <FileName>balance_feedback.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\balance_feedback.c</FilePath>
-            </File>
-            <File>
-              <FileName>attitude_imu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\attitude_imu.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>BalanceThirdParty</GroupName>
           <Files>
-            <File>
-              <FileName>BMI088driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\bmi088\BMI088driver.c</FilePath>
-            </File>
-            <File>
-              <FileName>BMI088middleware.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\bmi088\BMI088middleware.c</FilePath>
-            </File>
-            <File>
-              <FileName>orientation_ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\ekf\orientation_ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>matrix3x3d.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\ekf\matrix3x3d.c</FilePath>
-            </File>
-            <File>
-              <FileName>vector3d.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\ekf\vector3d.c</FilePath>
-            </File>
-            <File>
-              <FileName>so3_helper.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\third_party\balance\FML\ekf\so3_helper.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Control</GroupName>
           <Files>
             <File>
-              <FileName>leg_controller.c</FileName>
+              <FileName>right_side_control.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\src\leg_controller.c</FilePath>
+              <FilePath>..\src\right_side_control.c</FilePath>
             </File>
             <File>
               <FileName>lqr_controller.c</FileName>
@@ -623,21 +573,6 @@
               <FileName>lqr_gains.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\lqr_gains.c</FilePath>
-            </File>
-            <File>
-              <FileName>lqr_system.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\lqr_system.c</FilePath>
-            </File>
-            <File>
-              <FileName>flight_controller.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\flight_controller.c</FilePath>
-            </File>
-            <File>
-              <FileName>motion_planner.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\motion_planner.c</FilePath>
             </File>
             <File>
               <FileName>vmc_math.c</FileName>
@@ -658,16 +593,6 @@
               <FileName>motor_controller.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\motor_controller.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart_interface.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\uart_interface.c</FilePath>
-            </File>
-            <File>
-              <FileName>data_logger.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\data_logger.c</FilePath>
             </File>
           </Files>
         </Group>
