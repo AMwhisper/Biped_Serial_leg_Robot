@@ -2,6 +2,7 @@
 
 ## Project Overview
 A quadruped robot project based on RoboMaster Type-C development board with Damiaotech motors.
+Complete theoretical verification is in the PDF.
 
 ## Hardware Configuration
 - **Development Board**: RoboMaster Type-C Development Board
