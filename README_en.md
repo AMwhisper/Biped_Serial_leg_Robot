@@ -1,4 +1,4 @@
-# RoboMaster Type-C Quadruped Robot
+# RoboMaster Biped Serial-leg Robot
 
 ## Project Overview
 A quadruped robot project based on RoboMaster Type-C development board with Damiaotech motors.
